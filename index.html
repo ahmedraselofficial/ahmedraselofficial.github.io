@@ -2,51 +2,153 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Rosul Ahmed Rasel | Public Health & Digital Marketing</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-  <meta name="description" content="Official website of Rosul Ahmed Rasel, a Global Public Health graduate, digital marketing professional and content creator based in London, United Kingdom.">
+  <title>
+    Rosul Ahmed Rasel | Public Health, Marketing and Leadership
+  </title>
+
+  <meta
+    name="description"
+    content="Official professional website of Rosul Ahmed Rasel, a Global Public Health graduate, digital marketing professional, content creator, hospitality professional, researcher and emerging leader based in London."
+  >
 
   <meta name="author" content="Rosul Ahmed Rasel">
   <meta name="robots" content="index, follow">
 
-  <link rel="canonical" href="https://ahmedraselofficial.github.io/">
+  <link
+    rel="canonical"
+    href="https://ahmedraselofficial.github.io/"
+  >
 
-  <meta property="og:title" content="Rosul Ahmed Rasel">
-  <meta property="og:description" content="Global Public Health graduate, digital marketing professional and content creator based in London.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ahmedraselofficial.github.io/">
+  <meta property="og:type" content="profile">
+  <meta
+    property="og:title"
+    content="Rosul Ahmed Rasel"
+  >
+  <meta
+    property="og:description"
+    content="Global Public Health graduate, digital marketing professional, content creator and emerging leader based in London."
+  >
+  <meta
+    property="og:url"
+    content="https://ahmedraselofficial.github.io/"
+  >
+  <meta
+    property="og:image"
+    content="https://ahmedraselofficial.github.io/profile.jpg"
+  >
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta
+    name="twitter:title"
+    content="Rosul Ahmed Rasel"
+  >
+  <meta
+    name="twitter:description"
+    content="Public health, digital marketing, leadership, research and professional communication."
+  >
+  <meta
+    name="twitter:image"
+    content="https://ahmedraselofficial.github.io/profile.jpg"
+  >
 
   <style>
     :root {
-      --background: #f7f8fa;
+      --background: #f7f8fb;
+      --background-soft: #eef2f8;
       --surface: #ffffff;
+      --surface-soft: #f9fafc;
+
       --text: #172033;
-      --muted: #5f6878;
-      --primary: #2457d6;
-      --primary-dark: #173d9e;
-      --border: #e3e7ee;
-      --shadow: 0 16px 40px rgba(24, 36, 58, 0.08);
-      --radius: 20px;
-      --max-width: 1120px;
+      --text-soft: #5d6677;
+      --text-light: #808899;
+
+      --primary: #2859d9;
+      --primary-dark: #183a93;
+      --primary-soft: #e8efff;
+
+      --navy: #111c31;
+      --navy-light: #1c2e4c;
+
+      --gold: #d4ad59;
+      --gold-light: #f1d998;
+
+      --green: #147744;
+      --green-dark: #0b4f2e;
+
+      --border: #e1e6ef;
+
+      --shadow-small:
+        0 12px 35px rgba(23, 32, 51, 0.08);
+
+      --shadow-large:
+        0 30px 80px rgba(23, 32, 51, 0.15);
+
+      --radius-small: 16px;
+      --radius-medium: 25px;
+      --radius-large: 38px;
+
+      --max-width: 1180px;
+    }
+
+    body.dark-mode {
+      --background: #0e1727;
+      --background-soft: #121f33;
+      --surface: #182439;
+      --surface-soft: #1e2b42;
+
+      --text: #f4f6fa;
+      --text-soft: #bbc4d3;
+      --text-light: #929dad;
+
+      --primary: #7198ff;
+      --primary-dark: #4f76df;
+      --primary-soft: rgba(113, 152, 255, 0.12);
+
+      --border: rgba(255, 255, 255, 0.09);
+
+      --shadow-small:
+        0 12px 35px rgba(0, 0, 0, 0.2);
+
+      --shadow-large:
+        0 32px 90px rgba(0, 0, 0, 0.36);
     }
 
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     html {
       scroll-behavior: smooth;
+      scroll-padding-top: 95px;
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--background);
+      font-family:
+        Inter,
+        Arial,
+        Helvetica,
+        sans-serif;
+
       color: var(--text);
+      background: var(--background);
       line-height: 1.7;
+      overflow-x: hidden;
+
+      transition:
+        background 0.35s ease,
+        color 0.35s ease;
+    }
+
+    body.no-scroll {
+      overflow: hidden;
     }
 
     a {
@@ -54,22 +156,130 @@
       text-decoration: none;
     }
 
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    button {
+      font: inherit;
+    }
+
     .container {
       width: min(92%, var(--max-width));
-      margin: auto;
+      margin-inline: auto;
     }
 
-    header {
+    .section {
+      position: relative;
+      padding: 105px 0;
+    }
+
+    .section-soft {
+      background: var(--background-soft);
+    }
+
+    .section-heading {
+      max-width: 780px;
+      margin-bottom: 50px;
+    }
+
+    .section-label {
+      display: inline-block;
+
+      margin-bottom: 12px;
+
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .section-heading h2 {
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: clamp(39px, 5vw, 63px);
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+
+      margin-bottom: 18px;
+    }
+
+    .section-heading p {
+      max-width: 700px;
+
+      color: var(--text-soft);
+      font-size: 18px;
+    }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(38px);
+
+      transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .fade-left {
+      opacity: 0;
+      transform: translateX(-42px);
+
+      transition:
+        opacity 0.85s ease,
+        transform 0.85s ease;
+    }
+
+    .fade-left.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .fade-right {
+      opacity: 0;
+      transform: translateX(42px);
+
+      transition:
+        opacity 0.85s ease,
+        transform 0.85s ease;
+    }
+
+    .fade-right.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* Header */
+
+    .site-header {
       position: sticky;
       top: 0;
-      z-index: 100;
-      background: rgba(255, 255, 255, 0.92);
-      backdrop-filter: blur(12px);
+      z-index: 1000;
+
       border-bottom: 1px solid var(--border);
+
+      background:
+        color-mix(
+          in srgb,
+          var(--surface) 88%,
+          transparent
+        );
+
+      backdrop-filter: blur(18px);
     }
 
-    nav {
-      min-height: 72px;
+    .navbar {
+      min-height: 80px;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -77,273 +287,1364 @@
     }
 
     .logo {
-      font-size: 20px;
-      font-weight: 800;
+      color: var(--text);
+      font-size: 21px;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 17px;
     }
 
     .nav-links {
       display: flex;
-      gap: 22px;
-      color: var(--muted);
+      align-items: center;
+      gap: 23px;
+    }
+
+    .nav-links a {
+      position: relative;
+
+      color: var(--text-soft);
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 800;
+    }
+
+    .nav-links a::after {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+
+      width: 0;
+      height: 2px;
+
+      background: var(--primary);
+
+      transition: width 0.25s ease;
     }
 
     .nav-links a:hover {
       color: var(--primary);
     }
 
-    .hero {
-      padding: 110px 0 80px;
+    .nav-links a:hover::after {
+      width: 100%;
     }
 
-    .hero-grid {
+    .icon-button {
+      width: 42px;
+      height: 42px;
+
       display: grid;
-      grid-template-columns: 1.25fr 0.75fr;
-      gap: 50px;
-      align-items: center;
-    }
+      place-items: center;
 
-    .eyebrow {
-      display: inline-block;
-      margin-bottom: 18px;
-      color: var(--primary);
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      font-size: 13px;
-    }
-
-    h1 {
-      font-size: clamp(44px, 7vw, 76px);
-      line-height: 1.05;
-      letter-spacing: -0.04em;
-      margin-bottom: 24px;
-    }
-
-    .hero h2 {
-      font-size: clamp(20px, 3vw, 30px);
-      color: var(--muted);
-      font-weight: 500;
-      margin-bottom: 24px;
-    }
-
-    .hero p {
-      max-width: 700px;
-      color: var(--muted);
-      font-size: 18px;
-    }
-
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 32px;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 13px 22px;
-      border-radius: 999px;
-      font-weight: 700;
-      border: 1px solid var(--border);
+      color: var(--text);
       background: var(--surface);
+
+      border: 1px solid var(--border);
+      border-radius: 50%;
+
+      cursor: pointer;
+
+      transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
     }
 
-    .button-primary {
-      background: var(--primary);
-      color: white;
+    .icon-button:hover {
+      transform: translateY(-2px);
       border-color: var(--primary);
     }
 
-    .button-primary:hover {
-      background: var(--primary-dark);
+    .menu-button {
+      display: none;
     }
 
-    .profile-card {
-      background: linear-gradient(145deg, #ffffff, #eaf0ff);
-      border: 1px solid var(--border);
-      border-radius: 32px;
-      padding: 42px;
-      min-height: 400px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      box-shadow: var(--shadow);
+    /* Hero */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+
+      padding: 125px 0 100px;
     }
 
-    .profile-initials {
-      width: 120px;
-      height: 120px;
+    .hero::before {
+      content: "";
+
+      position: absolute;
+      top: -220px;
+      right: -190px;
+
+      width: 650px;
+      height: 650px;
+
       border-radius: 50%;
+
+      background:
+        radial-gradient(
+          circle,
+          rgba(40, 89, 217, 0.19),
+          rgba(40, 89, 217, 0)
+        );
+
+      animation: floatGlow 8s ease-in-out infinite;
+    }
+
+    .hero::after {
+      content: "";
+
+      position: absolute;
+      left: -220px;
+      bottom: -220px;
+
+      width: 500px;
+      height: 500px;
+
+      border-radius: 50%;
+
+      background:
+        radial-gradient(
+          circle,
+          rgba(212, 173, 89, 0.17),
+          rgba(212, 173, 89, 0)
+        );
+
+      animation: floatGlow 10s ease-in-out infinite reverse;
+    }
+
+    @keyframes floatGlow {
+      0%,
+      100% {
+        transform: translateY(0) scale(1);
+      }
+
+      50% {
+        transform: translateY(30px) scale(1.08);
+      }
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 2;
+
       display: grid;
-      place-items: center;
-      background: var(--primary);
-      color: white;
-      font-size: 38px;
-      font-weight: 800;
-      margin-bottom: 30px;
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: center;
+      gap: 72px;
     }
 
-    .profile-card p {
-      font-size: 16px;
-    }
+    .hero-location {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
 
-    section {
-      padding: 80px 0;
-    }
+      margin-bottom: 24px;
 
-    .section-heading {
-      margin-bottom: 40px;
-    }
-
-    .section-heading span {
       color: var(--primary);
-      font-weight: 700;
-      text-transform: uppercase;
       font-size: 13px;
-      letter-spacing: 0.06em;
+      font-weight: 900;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
     }
 
-    .section-heading h2 {
-      font-size: clamp(32px, 5vw, 50px);
-      margin-top: 8px;
-      letter-spacing: -0.03em;
+    .location-dot {
+      width: 9px;
+      height: 9px;
+
+      border-radius: 50%;
+      background: var(--primary);
+
+      box-shadow:
+        0 0 0 7px
+        color-mix(
+          in srgb,
+          var(--primary) 15%,
+          transparent
+        );
     }
 
-    .about-text {
+    .hero h1 {
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: clamp(57px, 8vw, 94px);
+      line-height: 0.98;
+      letter-spacing: -0.06em;
+
+      margin-bottom: 28px;
+    }
+
+    .hero-title {
+      max-width: 800px;
+
+      margin-bottom: 24px;
+
+      color: var(--text-soft);
+      font-size: clamp(23px, 3vw, 35px);
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    .hero-description {
+      max-width: 720px;
+
+      color: var(--text-soft);
+      font-size: 18px;
+      line-height: 1.85;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+
+      margin-top: 35px;
+    }
+
+    .button {
+      min-height: 52px;
+      padding: 0 24px;
+
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+
+      color: var(--text);
       background: var(--surface);
+
       border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 38px;
-      box-shadow: var(--shadow);
-      color: var(--muted);
+      border-radius: 999px;
+
+      font-size: 14px;
+      font-weight: 900;
+
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-small);
+    }
+
+    .button-primary {
+      color: #ffffff;
+      border-color: var(--primary);
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--primary),
+          var(--primary-dark)
+        );
+    }
+
+    .profile-wrapper {
+      position: relative;
+
+      max-width: 470px;
+      margin-left: auto;
+    }
+
+    .profile-frame {
+      position: relative;
+      overflow: hidden;
+
+      aspect-ratio: 4 / 5;
+
+      border:
+        1px solid
+        rgba(212, 173, 89, 0.42);
+
+      border-radius:
+        140px 140px 38px 38px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #15213a,
+          #253d68
+        );
+
+      box-shadow: var(--shadow-large);
+    }
+
+    .profile-frame::before {
+      content: "";
+
+      position: absolute;
+      inset: 14px;
+      z-index: 2;
+
+      pointer-events: none;
+
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.18);
+
+      border-radius:
+        125px 125px 28px 28px;
+    }
+
+    .profile-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+
+      transition: transform 0.7s ease;
+    }
+
+    .profile-frame:hover img {
+      transform: scale(1.04);
+    }
+
+    .floating-label {
+      position: absolute;
+      z-index: 5;
+
+      padding: 10px 15px;
+
+      color: var(--text);
+      background:
+        color-mix(
+          in srgb,
+          var(--surface) 92%,
+          transparent
+        );
+
+      border: 1px solid var(--border);
+      border-radius: 999px;
+
+      box-shadow: var(--shadow-small);
+      backdrop-filter: blur(12px);
+
+      font-size: 12px;
+      font-weight: 900;
+
+      animation: labelFloat 4s ease-in-out infinite;
+    }
+
+    .label-one {
+      top: 17%;
+      left: -65px;
+    }
+
+    .label-two {
+      right: -45px;
+      bottom: 24%;
+      animation-delay: 0.8s;
+    }
+
+    .label-three {
+      left: -25px;
+      bottom: 7%;
+      animation-delay: 1.5s;
+    }
+
+    @keyframes labelFloat {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    /* About */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 28px;
+    }
+
+    .about-card,
+    .details-card {
+      padding: 40px;
+
+      background: var(--surface);
+
+      border: 1px solid var(--border);
+      border-radius: var(--radius-medium);
+
+      box-shadow: var(--shadow-small);
+    }
+
+    .about-card p {
+      color: var(--text-soft);
       font-size: 17px;
     }
 
-    .about-text p + p {
+    .about-card p + p {
       margin-top: 18px;
     }
 
-    .grid {
+    .details-item {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .details-item:first-child {
+      padding-top: 0;
+    }
+
+    .details-item:last-child {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .details-label {
+      color: var(--text-light);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .details-value {
+      margin-top: 5px;
+      font-weight: 900;
+    }
+
+    /* Expertise */
+
+    .expertise-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 22px;
     }
 
-    .card {
+    .expertise-card {
+      position: relative;
+      overflow: hidden;
+
+      min-height: 330px;
+      padding: 33px;
+
       background: var(--surface);
+
       border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 28px;
-      box-shadow: var(--shadow);
+      border-radius: var(--radius-medium);
+
+      box-shadow: var(--shadow-small);
+
+      transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
     }
 
-    .card h3 {
-      margin-bottom: 12px;
-      font-size: 21px;
+    .expertise-card:hover {
+      transform: translateY(-9px);
+      box-shadow: var(--shadow-large);
+      border-color: var(--primary);
     }
 
-    .card p,
-    .card li {
-      color: var(--muted);
+    .expertise-number {
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 0.12em;
     }
 
-    .card ul {
-      padding-left: 18px;
+    .expertise-card h3 {
+      margin: 20px 0 14px;
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: 28px;
     }
 
-    .timeline {
+    .expertise-card p {
+      margin-bottom: 18px;
+      color: var(--text-soft);
+    }
+
+    .expertise-list {
       display: grid;
-      gap: 20px;
+      gap: 8px;
+      list-style: none;
     }
 
-    .timeline-item {
+    .expertise-list li {
+      color: var(--text-soft);
+      font-size: 14px;
+    }
+
+    .expertise-list li::before {
+      content: "•";
+      color: var(--primary);
+      margin-right: 8px;
+    }
+
+    /* Experience */
+
+    .experience-list {
+      display: grid;
+      gap: 24px;
+    }
+
+    .experience-card {
+      position: relative;
+      overflow: hidden;
+
+      padding: 39px;
+
       background: var(--surface);
+
       border: 1px solid var(--border);
-      border-radius: var(--radius);
+      border-radius: var(--radius-medium);
+
+      box-shadow: var(--shadow-small);
+
+      transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    }
+
+    .experience-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-large);
+    }
+
+    .experience-card h3 {
+      margin: 5px 0;
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: clamp(27px, 3vw, 36px);
+    }
+
+    .experience-company {
+      margin-bottom: 18px;
+
+      color: var(--text-soft);
+      font-size: 17px;
+      font-weight: 900;
+    }
+
+    .experience-card p {
+      max-width: 960px;
+      color: var(--text-soft);
+    }
+
+    .experience-card p + p {
+      margin-top: 13px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+
+      margin-top: 23px;
+    }
+
+    .tag {
+      padding: 7px 12px;
+
+      color: var(--text-soft);
+      background: var(--surface-soft);
+
+      border: 1px solid var(--border);
+      border-radius: 999px;
+
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .holiday-card {
+      color: #ffffff;
+
+      border:
+        1px solid
+        rgba(212, 173, 89, 0.42);
+
+      background:
+        radial-gradient(
+          circle at top right,
+          rgba(212, 173, 89, 0.22),
+          transparent 33%
+        ),
+        linear-gradient(
+          135deg,
+          #111c31,
+          #1d304f 56%,
+          #101827
+        );
+
+      box-shadow:
+        0 32px 85px
+        rgba(9, 17, 34, 0.27);
+    }
+
+    .holiday-card::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 7px;
+      height: 100%;
+
+      background:
+        linear-gradient(
+          to bottom,
+          #f1d28b,
+          #ac7e2f
+        );
+    }
+
+    .holiday-badge {
+      display: inline-block;
+
+      margin-bottom: 15px;
+      padding: 7px 12px;
+
+      color: #edd391;
+      background:
+        rgba(212, 173, 89, 0.09);
+
+      border:
+        1px solid
+        rgba(212, 173, 89, 0.34);
+
+      border-radius: 999px;
+
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .holiday-card .experience-company {
+      color: #e6c878;
+    }
+
+    .holiday-card p {
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    .holiday-card .tag {
+      color: #ead493;
+      background:
+        rgba(255, 255, 255, 0.055);
+
+      border-color:
+        rgba(212, 173, 89, 0.24);
+    }
+
+    /* Education */
+
+    .education-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 23px;
+    }
+
+    .education-card {
+      position: relative;
+      overflow: hidden;
+
+      min-height: 310px;
+      padding: 38px;
+
+      background: var(--surface);
+
+      border: 1px solid var(--border);
+      border-radius: var(--radius-medium);
+
+      box-shadow: var(--shadow-small);
+
+      transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+    }
+
+    .education-card:hover {
+      transform:
+        translateY(-8px)
+        rotate(-0.25deg);
+
+      box-shadow: var(--shadow-large);
+    }
+
+    .education-card::before {
+      content: "";
+
+      position: absolute;
+      top: -90px;
+      right: -90px;
+
+      width: 190px;
+      height: 190px;
+
+      border-radius: 50%;
+
+      background:
+        color-mix(
+          in srgb,
+          var(--primary) 12%,
+          transparent
+        );
+    }
+
+    .education-label {
+      color: var(--primary);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+
+    .education-card h3 {
+      margin: 25px 0 12px;
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: 29px;
+      line-height: 1.3;
+    }
+
+    .education-institution {
+      color: var(--text-soft);
+      font-weight: 900;
+      font-size: 17px;
+    }
+
+    .education-card p {
+      margin-top: 10px;
+      color: var(--text-soft);
+    }
+
+    /* Achievements */
+
+    .achievements-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 27px;
+    }
+
+    .achievement-card {
+      overflow: hidden;
+
+      background: var(--surface);
+
+      border: 1px solid var(--border);
+      border-radius: var(--radius-medium);
+
+      box-shadow: var(--shadow-small);
+
+      transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+    }
+
+    .achievement-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-large);
+    }
+
+    .achievement-image {
+      position: relative;
+      overflow: hidden;
+
+      height: 360px;
+
+      background: var(--background-soft);
+    }
+
+    .achievement-image img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+      object-position: center;
+
+      transition: transform 0.75s ease;
+    }
+
+    .achievement-card:hover .achievement-image img {
+      transform: scale(1.06);
+    }
+
+    .achievement-overlay {
+      position: absolute;
+      inset: 0;
+
+      background:
+        linear-gradient(
+          to top,
+          rgba(10, 18, 32, 0.65),
+          transparent 54%
+        );
+    }
+
+    .achievement-content {
       padding: 30px;
     }
 
-    .timeline-item .date {
+    .achievement-category {
       color: var(--primary);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .achievement-card h3 {
+      margin: 11px 0;
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: 27px;
+      line-height: 1.3;
+    }
+
+    .achievement-card p {
+      color: var(--text-soft);
+    }
+
+    .achievement-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+
+      margin-top: 19px;
+
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .achievement-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Gallery */
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr 0.75fr;
+      grid-template-rows: 280px 280px;
+      gap: 17px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+
+      border: none;
+      border-radius: var(--radius-medium);
+
+      background: var(--surface);
+      box-shadow: var(--shadow-small);
+
+      cursor: pointer;
+    }
+
+    .gallery-item:first-child {
+      grid-row: 1 / 3;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      transition:
+        transform 0.65s ease,
+        filter 0.65s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.07);
+      filter: brightness(0.78);
+    }
+
+    .gallery-caption {
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      bottom: 18px;
+
+      color: #ffffff;
       font-size: 14px;
-      font-weight: 700;
+      font-weight: 900;
+
+      opacity: 0;
+      transform: translateY(12px);
+
+      transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
     }
 
-    .timeline-item h3 {
-      margin: 6px 0;
+    .gallery-item:hover .gallery-caption {
+      opacity: 1;
+      transform: translateY(0);
     }
 
-    .timeline-item h4 {
-      color: var(--muted);
-      margin-bottom: 12px;
-      font-weight: 600;
+    /* Research */
+
+    .research-card {
+      position: relative;
+      overflow: hidden;
+
+      padding: 54px;
+
+      color: #ffffff;
+
+      border-radius: var(--radius-large);
+
+      background:
+        radial-gradient(
+          circle at top right,
+          rgba(112, 150, 255, 0.25),
+          transparent 30%
+        ),
+        linear-gradient(
+          135deg,
+          #16233c,
+          #243e6c
+        );
+
+      box-shadow: var(--shadow-large);
     }
 
-    .timeline-item p {
-      color: var(--muted);
+    .research-label {
+      color: #c8d6ff;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
     }
 
-    .publication {
-      background: #172033;
-      color: white;
-      border-radius: 28px;
-      padding: 42px;
+    .research-card h3 {
+      max-width: 960px;
+
+      margin: 14px 0 21px;
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: clamp(30px, 4vw, 47px);
+      line-height: 1.25;
     }
 
-    .publication p {
-      color: #cbd3e1;
-      margin-top: 15px;
+    .research-card p {
+      max-width: 880px;
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 17px;
     }
 
-    .publication a {
-      display: inline-block;
-      margin-top: 20px;
-      color: #9fb8ff;
-      font-weight: 700;
+    .research-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      margin-top: 28px;
     }
 
-    .contact {
+    .research-tags span {
+      padding: 8px 13px;
+
+      color: #dce5ff;
+      background:
+        rgba(255, 255, 255, 0.07);
+
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.13);
+
+      border-radius: 999px;
+
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    /* Leadership */
+
+    .leadership-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .leadership-card {
+      padding: 38px;
+
+      background: var(--surface);
+
+      border: 1px solid var(--border);
+      border-radius: var(--radius-medium);
+
+      box-shadow: var(--shadow-small);
+    }
+
+    .leadership-card h3 {
+      margin-bottom: 13px;
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: 29px;
+    }
+
+    .leadership-card p {
+      color: var(--text-soft);
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      margin-top: 22px;
+    }
+
+    .skill {
+      padding: 9px 14px;
+
+      color: var(--text-soft);
+      background: var(--surface-soft);
+
+      border: 1px solid var(--border);
+      border-radius: 999px;
+
+      font-size: 13px;
+      font-weight: 900;
+
+      transition:
+        transform 0.25s ease,
+        color 0.25s ease,
+        background 0.25s ease;
+    }
+
+    .skill:hover {
+      transform: translateY(-3px);
+      color: var(--primary);
+      background: var(--primary-soft);
+    }
+
+    /* Contact */
+
+    .contact-card {
+      position: relative;
+      overflow: hidden;
+
+      padding: 75px 36px;
+
       text-align: center;
       background: var(--surface);
+
       border: 1px solid var(--border);
-      border-radius: 30px;
-      padding: 60px 24px;
-      box-shadow: var(--shadow);
+      border-radius: var(--radius-large);
+
+      box-shadow: var(--shadow-large);
     }
 
-    .contact p {
-      max-width: 650px;
-      margin: 16px auto 0;
-      color: var(--muted);
+    .contact-card::before {
+      content: "";
+
+      position: absolute;
+      top: -270px;
+      left: 50%;
+
+      width: 470px;
+      height: 470px;
+
+      transform: translateX(-50%);
+      border-radius: 50%;
+
+      background:
+        radial-gradient(
+          circle,
+          rgba(40, 89, 217, 0.18),
+          transparent 70%
+        );
     }
 
-    footer {
+    .contact-card h2 {
+      position: relative;
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: clamp(42px, 6vw, 68px);
+      line-height: 1.08;
+    }
+
+    .contact-card p {
+      position: relative;
+
+      max-width: 700px;
+      margin: 18px auto 0;
+
+      color: var(--text-soft);
+      font-size: 18px;
+    }
+
+    .contact-actions {
+      position: relative;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+
+      margin-top: 31px;
+    }
+
+    /* Footer */
+
+    .site-footer {
       padding: 35px 0;
+
       text-align: center;
-      color: var(--muted);
+      color: var(--text-soft);
       font-size: 14px;
+
+      border-top: 1px solid var(--border);
     }
 
-    @media (max-width: 850px) {
+    /* Lightbox */
+
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 3000;
+
+      display: none;
+      align-items: center;
+      justify-content: center;
+
+      padding: 30px;
+
+      background: rgba(4, 9, 18, 0.91);
+      backdrop-filter: blur(13px);
+    }
+
+    .lightbox.open {
+      display: flex;
+    }
+
+    .lightbox img {
+      max-width: min(1100px, 94vw);
+      max-height: 86vh;
+
+      border-radius: 18px;
+
+      box-shadow:
+        0 35px 100px
+        rgba(0, 0, 0, 0.55);
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 24px;
+      right: 28px;
+
+      width: 48px;
+      height: 48px;
+
+      display: grid;
+      place-items: center;
+
+      color: #ffffff;
+      background:
+        rgba(255, 255, 255, 0.1);
+
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.2);
+
+      border-radius: 50%;
+
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 1000px) {
       .hero-grid,
-      .grid {
+      .about-grid {
         grid-template-columns: 1fr;
       }
 
+      .profile-wrapper {
+        width: min(100%, 500px);
+        margin: 20px auto 0;
+      }
+
+      .expertise-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 390px 280px 280px;
+      }
+
+      .gallery-item:first-child {
+        grid-column: 1 / 3;
+        grid-row: auto;
+      }
+    }
+
+    @media (max-width: 800px) {
+      .menu-button {
+        display: grid;
+      }
+
       .nav-links {
+        position: absolute;
+        top: 80px;
+        left: 4%;
+        right: 4%;
+
         display: none;
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding: 23px;
+
+        background: var(--surface);
+
+        border: 1px solid var(--border);
+        border-radius: var(--radius-small);
+
+        box-shadow: var(--shadow-large);
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .expertise-grid,
+      .education-grid,
+      .achievements-grid,
+      .leadership-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 84px 0;
+      }
+
+      .experience-card,
+      .research-card,
+      .about-card,
+      .details-card,
+      .leadership-card {
+        padding: 30px 25px;
+      }
+
+      .floating-label {
+        display: none;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        font-size: 17px;
       }
 
       .hero {
-        padding-top: 75px;
+        padding-top: 90px;
       }
 
-      .profile-card {
-        min-height: 300px;
+      .hero h1 {
+        font-size: 53px;
+      }
+
+      .hero-title {
+        font-size: 23px;
+      }
+
+      .hero-actions,
+      .contact-actions {
+        flex-direction: column;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .profile-frame {
+        border-radius:
+          95px 95px 28px 28px;
+      }
+
+      .section-heading h2 {
+        font-size: 40px;
+      }
+
+      .achievement-image {
+        height: 300px;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 310px);
+      }
+
+      .gallery-item:first-child {
+        grid-column: auto;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation: none !important;
+        transition-duration: 0.01ms !important;
+      }
+
+      .fade-up,
+      .fade-left,
+      .fade-right {
+        opacity: 1;
+        transform: none;
       }
     }
   </style>
@@ -352,13 +1653,19 @@
   {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
+    "url": "https://ahmedraselofficial.github.io/",
     "mainEntity": {
       "@type": "Person",
       "@id": "https://ahmedraselofficial.github.io/#person",
       "name": "Rosul Ahmed Rasel",
       "url": "https://ahmedraselofficial.github.io/",
-      "jobTitle": "Digital Marketing and Content Creation Professional",
-      "description": "Global Public Health graduate, digital marketing professional and content creator based in London, United Kingdom.",
+      "image": "https://ahmedraselofficial.github.io/profile.jpg",
+      "description": "Global Public Health graduate, digital marketing professional, content creator, hospitality professional, researcher and emerging leader based in London.",
+      "jobTitle": [
+        "Digital Marketing Professional",
+        "Content Creator",
+        "Hospitality Professional"
+      ],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "London",
@@ -374,8 +1681,34 @@
           "name": "Primeasia University"
         }
       ],
+      "worksFor": [
+        {
+          "@type": "Organization",
+          "name": "Carrot Soft"
+        },
+        {
+          "@type": "Organization",
+          "name": "Holiday Inn London - Camden Lock"
+        }
+      ],
+      "award": [
+        "Emerging Leader Award 2024",
+        "Volunteer Leader Award"
+      ],
       "sameAs": [
         "https://www.linkedin.com/in/ahmed-rasel-on/"
+      ],
+      "knowsAbout": [
+        "Global Public Health",
+        "Public Health Research",
+        "Digital Marketing",
+        "Content Creation",
+        "Social Media Strategy",
+        "Business Development",
+        "Hospitality",
+        "Leadership",
+        "Public Speaking",
+        "Community Engagement"
       ]
     }
   }
@@ -384,396 +1717,1177 @@
 
 <body>
 
-<header>
-  <nav class="container">
-    <a href="#" class="logo">Rosul Ahmed Rasel</a>
+  <header class="site-header">
+    <nav class="container navbar">
 
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#expertise">Expertise</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#research">Research</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-</header>
+      <a href="#home" class="logo">
+        Rosul Ahmed Rasel
+      </a>
 
-<main>
+      <div class="nav-right">
 
-  <section class="hero">
-    <div class="container hero-grid">
+        <div class="nav-links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#research">Research</a>
+          <a href="#contact">Contact</a>
+        </div>
 
-      <div>
-        <span class="eyebrow">London, United Kingdom</span>
+        <button
+          class="icon-button"
+          id="themeButton"
+          type="button"
+          aria-label="Switch colour theme"
+        >
+          ◐
+        </button>
 
-        <h1>Rosul Ahmed Rasel</h1>
+        <button
+          class="icon-button menu-button"
+          id="menuButton"
+          type="button"
+          aria-label="Open navigation menu"
+        >
+          ☰
+        </button>
 
-        <h2>Global Public Health Graduate, Digital Marketer and Content Creator</h2>
+      </div>
+    </nav>
+  </header>
 
-        <p>
-          I combine public health knowledge, research experience and analytical
-          thinking with digital marketing, social media strategy and creative
-          content development.
-        </p>
+  <main>
 
-        <div class="buttons">
-          <a class="button button-primary"
-             href="https://www.linkedin.com/in/ahmed-rasel-on/"
-             target="_blank"
-             rel="noopener noreferrer">
-            Connect on LinkedIn
-          </a>
+    <!-- Hero -->
 
-          <a class="button" href="#contact">Contact Me</a>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+
+        <div class="fade-left">
+
+          <div class="hero-location">
+            <span class="location-dot"></span>
+            London, United Kingdom
+          </div>
+
+          <h1>
+            Rosul Ahmed Rasel
+          </h1>
+
+          <p class="hero-title">
+            Global Public Health Graduate,
+            Digital Marketing Professional,
+            Content Creator and Emerging Leader
+          </p>
+
+          <p class="hero-description">
+            I bring together public health knowledge, research,
+            digital communication, content strategy, hospitality
+            and community leadership to support meaningful work,
+            professional growth and positive social impact.
+          </p>
+
+          <div class="hero-actions">
+
+            <a
+              class="button button-primary"
+              href="https://www.linkedin.com/in/ahmed-rasel-on/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Connect on LinkedIn
+            </a>
+
+            <a
+              class="button"
+              href="#achievements"
+            >
+              View Achievements
+            </a>
+
+            <a
+              class="button"
+              href="mailto:connect.rasel.uk@gmail.com"
+            >
+              Send an Email
+            </a>
+
+          </div>
+        </div>
+
+        <div class="profile-wrapper fade-right">
+
+          <div class="profile-frame">
+            <img
+              src="profile.jpg"
+              alt="Professional portrait of Rosul Ahmed Rasel"
+            >
+          </div>
+
+          <div class="floating-label label-one">
+            Public Health
+          </div>
+
+          <div class="floating-label label-two">
+            Digital Marketing
+          </div>
+
+          <div class="floating-label label-three">
+            Leadership
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About -->
+
+    <section class="section" id="about">
+      <div class="container">
+
+        <div class="section-heading fade-up">
+          <span class="section-label">
+            About me
+          </span>
+
+          <h2>
+            A multidisciplinary professional
+          </h2>
+
+          <p>
+            My professional journey connects public health,
+            research, communication, digital strategy,
+            hospitality and community leadership.
+          </p>
+        </div>
+
+        <div class="about-grid">
+
+          <article class="about-card fade-left">
+
+            <p>
+              I am a Global Public Health graduate based in London,
+              with academic and practical experience in public health,
+              nutrition, research, community programmes and
+              evidence-based communication.
+            </p>
+
+            <p>
+              Alongside my health background, I work in digital marketing,
+              content creation, social media strategy, campaign planning
+              and business development through Carrot Soft.
+            </p>
+
+            <p>
+              I also work within the international hospitality sector at
+              Holiday Inn London – Camden Lock, where professionalism,
+              communication and guest experience are central to my role.
+            </p>
+
+            <p>
+              Leadership and volunteering have been important parts of my
+              journey. I have led student initiatives, delivered public
+              speeches, supported community activities and received
+              recognition for leadership and volunteer contribution.
+            </p>
+
+          </article>
+
+          <aside class="details-card fade-right">
+
+            <div class="details-item">
+              <div class="details-label">
+                Location
+              </div>
+
+              <div class="details-value">
+                London, United Kingdom
+              </div>
+            </div>
+
+            <div class="details-item">
+              <div class="details-label">
+                Current work
+              </div>
+
+              <div class="details-value">
+                Carrot Soft
+              </div>
+            </div>
+
+            <div class="details-item">
+              <div class="details-label">
+                Hospitality
+              </div>
+
+              <div class="details-value">
+                Holiday Inn London – Camden Lock
+              </div>
+            </div>
+
+            <div class="details-item">
+              <div class="details-label">
+                Academic focus
+              </div>
+
+              <div class="details-value">
+                Global Public Health
+              </div>
+            </div>
+
+            <div class="details-item">
+              <div class="details-label">
+                Professional interests
+              </div>
+
+              <div class="details-value">
+                Health, communication, leadership and digital growth
+              </div>
+            </div>
+
+          </aside>
+
         </div>
       </div>
+    </section>
 
-      <div class="profile-card">
-        <div class="profile-initials">RAR</div>
+    <!-- Expertise -->
 
-        <h3>Public Health. Communication. Digital Growth.</h3>
+    <section
+      class="section section-soft"
+      id="expertise"
+    >
+      <div class="container">
 
-        <p>
-          Supporting organisations through research, meaningful communication,
-          content strategy and audience-focused marketing.
-        </p>
+        <div class="section-heading fade-up">
+          <span class="section-label">
+            Expertise
+          </span>
+
+          <h2>
+            Areas of professional focus
+          </h2>
+
+          <p>
+            A combination of analytical thinking,
+            creative communication and service-focused experience.
+          </p>
+        </div>
+
+        <div class="expertise-grid">
+
+          <article class="expertise-card fade-up">
+
+            <div class="expertise-number">
+              01
+            </div>
+
+            <h3>
+              Public Health and Research
+            </h3>
+
+            <p>
+              Applying evidence-based thinking to health research,
+              community programmes and professional communication.
+            </p>
+
+            <ul class="expertise-list">
+              <li>Public health research</li>
+              <li>Community health programmes</li>
+              <li>Data collection and analysis</li>
+              <li>Monitoring and evaluation</li>
+              <li>Literature review and reporting</li>
+            </ul>
+
+          </article>
+
+          <article class="expertise-card fade-up">
+
+            <div class="expertise-number">
+              02
+            </div>
+
+            <h3>
+              Digital Marketing and Content
+            </h3>
+
+            <p>
+              Helping businesses communicate clearly and connect
+              with their audiences through creative digital content.
+            </p>
+
+            <ul class="expertise-list">
+              <li>Social media strategy</li>
+              <li>Content calendar development</li>
+              <li>Campaign planning</li>
+              <li>Reels and short-form content</li>
+              <li>Business development</li>
+            </ul>
+
+          </article>
+
+          <article class="expertise-card fade-up">
+
+            <div class="expertise-number">
+              03
+            </div>
+
+            <h3>
+              Hospitality and Communication
+            </h3>
+
+            <p>
+              Supporting high-quality guest experiences through
+              professionalism, teamwork and attention to detail.
+            </p>
+
+            <ul class="expertise-list">
+              <li>Guest communication</li>
+              <li>International hospitality</li>
+              <li>Service excellence</li>
+              <li>Team collaboration</li>
+              <li>Professional presentation</li>
+            </ul>
+
+          </article>
+
+        </div>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- Experience -->
 
-  <section id="about">
+    <section class="section" id="experience">
+      <div class="container">
+
+        <div class="section-heading fade-up">
+          <span class="section-label">
+            Experience
+          </span>
+
+          <h2>
+            Professional journey
+          </h2>
+
+          <p>
+            Experience across marketing, hospitality,
+            higher education and community health programmes.
+          </p>
+        </div>
+
+        <div class="experience-list">
+
+          <article class="experience-card fade-up">
+
+            <h3>
+              Marketing, Content Creation
+              and Business Development
+            </h3>
+
+            <div class="experience-company">
+              Carrot Soft
+            </div>
+
+            <p>
+              Supporting businesses through social media strategy,
+              content planning, promotional campaign development,
+              client communication and business growth.
+            </p>
+
+            <p>
+              My work includes creating content calendars,
+              developing social media concepts, writing promotional
+              content and coordinating creative production.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Digital Marketing</span>
+              <span class="tag">Content Strategy</span>
+              <span class="tag">Social Media</span>
+              <span class="tag">Business Development</span>
+            </div>
+
+          </article>
+
+          <article
+            class="experience-card holiday-card fade-up"
+          >
+
+            <div class="holiday-badge">
+              International hospitality
+            </div>
+
+            <h3>
+              Hospitality Professional
+            </h3>
+
+            <div class="experience-company">
+              Holiday Inn London – Camden Lock
+            </div>
+
+            <p>
+              Working within an internationally recognised hotel
+              environment and contributing to a polished,
+              welcoming and professional guest experience.
+            </p>
+
+            <p>
+              The role involves communicating with guests from
+              diverse backgrounds, supporting service requirements,
+              collaborating with colleagues and maintaining high
+              hospitality standards.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Guest Experience</span>
+              <span class="tag">Hospitality</span>
+              <span class="tag">Communication</span>
+              <span class="tag">Service Excellence</span>
+            </div>
+
+          </article>
+
+          <article class="experience-card fade-up">
+
+            <h3>
+              Executive Officer
+            </h3>
+
+            <div class="experience-company">
+              Primeasia University, Bangladesh
+            </div>
+
+            <p>
+              Provided administrative and project support within
+              an academic environment, managed documentation,
+              stakeholder communication and reporting, and
+              supported institutional activities.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Administration</span>
+              <span class="tag">Documentation</span>
+              <span class="tag">Communication</span>
+              <span class="tag">Project Support</span>
+            </div>
+
+          </article>
+
+          <article class="experience-card fade-up">
+
+            <h3>
+              Technical Assistant,
+              Health Programme
+            </h3>
+
+            <div class="experience-company">
+              BRAC, Bangladesh
+            </div>
+
+            <p>
+              Supported public health programmes through
+              field-level data collection, health-indicator
+              monitoring, programme documentation and reporting.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Public Health</span>
+              <span class="tag">Data Collection</span>
+              <span class="tag">Monitoring</span>
+              <span class="tag">Programme Reporting</span>
+            </div>
+
+          </article>
+
+          <article class="experience-card fade-up">
+
+            <h3>
+              Field Supervisor,
+              Community Health
+            </h3>
+
+            <div class="experience-company">
+              Dhaka Ahsania Mission, Bangladesh
+            </div>
+
+            <p>
+              Supervised community-level public health activities,
+              coordinated field staff, supported health-awareness
+              programmes and prepared monitoring and evaluation
+              reports.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Community Health</span>
+              <span class="tag">Field Supervision</span>
+              <span class="tag">Team Coordination</span>
+              <span class="tag">Monitoring and Evaluation</span>
+            </div>
+
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+
+    <section
+      class="section section-soft"
+      id="education"
+    >
+      <div class="container">
+
+        <div class="section-heading fade-up">
+          <span class="section-label">
+            Education
+          </span>
+
+          <h2>
+            Academic background
+          </h2>
+
+          <p>
+            Academic study focused on global health,
+            population health, nutrition and evidence-based practice.
+          </p>
+        </div>
+
+        <div class="education-grid">
+
+          <article class="education-card fade-left">
+
+            <div class="education-label">
+              Postgraduate education
+            </div>
+
+            <h3>
+              MSc in Global Public Health
+            </h3>
+
+            <div class="education-institution">
+              Canterbury Christ Church University
+            </div>
+
+            <p>
+              United Kingdom
+            </p>
+
+            <div class="tags">
+              <span class="tag">Global Health</span>
+              <span class="tag">Population Health</span>
+              <span class="tag">Research</span>
+            </div>
+
+          </article>
+
+          <article class="education-card fade-right">
+
+            <div class="education-label">
+              Undergraduate education
+            </div>
+
+            <h3>
+              Bachelor of Public Health Nutrition
+            </h3>
+
+            <div class="education-institution">
+              Primeasia University
+            </div>
+
+            <p>
+              Bangladesh
+            </p>
+
+            <div class="tags">
+              <span class="tag">Public Health</span>
+              <span class="tag">Nutrition</span>
+              <span class="tag">Health Promotion</span>
+            </div>
+
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+
+    <section class="section" id="achievements">
+      <div class="container">
+
+        <div class="section-heading fade-up">
+          <span class="section-label">
+            Achievements
+          </span>
+
+          <h2>
+            Leadership, recognition and public speaking
+          </h2>
+
+          <p>
+            Selected highlights reflecting leadership,
+            volunteer contribution, public communication
+            and community engagement.
+          </p>
+        </div>
+
+        <div class="achievements-grid">
+
+          <article class="achievement-card fade-up">
+
+            <div class="achievement-image">
+              <img
+                src="emerging-leader-award.png"
+                alt="Rosul Ahmed Rasel receiving the Emerging Leader Award 2024"
+              >
+              <div class="achievement-overlay"></div>
+            </div>
+
+            <div class="achievement-content">
+
+              <div class="achievement-category">
+                Leadership recognition
+              </div>
+
+              <h3>
+                Emerging Leader Award 2024
+              </h3>
+
+              <p>
+                Honoured to receive the Emerging Leader Award
+                from DMH Foundation in the UG merit category.
+                This recognition reflects a continued commitment
+                to leadership, community contribution and
+                positive impact.
+              </p>
+
+              <a
+                class="achievement-link"
+                href="https://www.linkedin.com/posts/ahmed-rasel-on_emergingleaders-dmhfoundation-bicc-activity-7272578958469001216-oLKa"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View original post →
+              </a>
+
+            </div>
+          </article>
+
+          <article class="achievement-card fade-up">
+
+            <div class="achievement-image">
+              <img
+                src="volunteer-leader-award.png"
+                alt="Rosul Ahmed Rasel speaking at a Volunteer Appreciation Event"
+              >
+              <div class="achievement-overlay"></div>
+            </div>
+
+            <div class="achievement-content">
+
+              <div class="achievement-category">
+                Volunteer leadership
+              </div>
+
+              <h3>
+                Volunteer Leader Award
+              </h3>
+
+              <p>
+                Recognised at the Volunteer Appreciation Event
+                at Primeasia University for leadership and
+                volunteer contribution connected with the
+                successful foundation of the permanent campus.
+              </p>
+
+              <a
+                class="achievement-link"
+                href="https://www.linkedin.com/posts/ahmed-rasel-on_primeasiauniversity-leadership-volunteerspirit-activity-7303182922482663424--aEx"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View original post →
+              </a>
+
+            </div>
+          </article>
+
+          <article class="achievement-card fade-up">
+
+            <div class="achievement-image">
+              <img
+                src="phn-speech.png"
+                alt="Rosul Ahmed Rasel delivering a speech at the PHN Annual Carnival"
+              >
+              <div class="achievement-overlay"></div>
+            </div>
+
+            <div class="achievement-content">
+
+              <div class="achievement-category">
+                Public speaking
+              </div>
+
+              <h3>
+                Speech at the PHN Annual Carnival
+              </h3>
+
+              <p>
+                Delivered a speech at the PHN Annual Carnival,
+                an inspiring gathering celebrating achievement,
+                professional development, community and public
+                health engagement.
+              </p>
+
+              <a
+                class="achievement-link"
+                href="https://www.linkedin.com/posts/ahmed-rasel-on_delivering-my-speech-at-the-phn-annual-carnival-activity-7280228553747509248-rz1j"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View original post →
+              </a>
+
+            </div>
+          </article>
+
+          <article class="achievement-card fade-up">
+
+            <div class="achievement-image">
+              <img
+                src="leadership-profile.png"
+                alt="Leadership profile of Rosul Ahmed Rasel as President of Primeasia University Nutrition Club"
+              >
+              <div class="achievement-overlay"></div>
+            </div>
+
+            <div class="achievement-content">
+
+              <div class="achievement-category">
+                Student leadership
+              </div>
+
+              <h3>
+                President of the Nutrition Club
+              </h3>
+
+              <p>
+                Led the Primeasia University Nutrition Club,
+                supporting health and nutrition awareness,
+                student engagement, event planning,
+                volunteer coordination and community-focused
+                activities.
+              </p>
+
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+
+    <section class="section section-soft">
+      <div class="container">
+
+        <div class="section-heading fade-up">
+          <span class="section-label">
+            Photo highlights
+          </span>
+
+          <h2>
+            Moments from leadership and professional life
+          </h2>
+
+          <p>
+            Selected photographs from public speaking,
+            leadership recognition and community engagement.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+
+          <button
+            class="gallery-item fade-up"
+            data-image="emerging-leader-award.png"
+            type="button"
+          >
+            <img
+              src="emerging-leader-award.png"
+              alt="Emerging Leader Award"
+            >
+            <span class="gallery-caption">
+              Emerging Leader Award
+            </span>
+          </button>
+
+          <button
+            class="gallery-item fade-up"
+            data-image="phn-speech.png"
+            type="button"
+          >
+            <img
+              src="phn-speech.png"
+              alt="Public speaking at the PHN Annual Carnival"
+            >
+            <span class="gallery-caption">
+              PHN Annual Carnival speech
+            </span>
+          </button>
+
+          <button
+            class="gallery-item fade-up"
+            data-image="volunteer-leader-award.png"
+            type="button"
+          >
+            <img
+              src="volunteer-leader-award.png"
+              alt="Volunteer Appreciation Event"
+            >
+            <span class="gallery-caption">
+              Volunteer Appreciation Event
+            </span>
+          </button>
+
+          <button
+            class="gallery-item fade-up"
+            data-image="leadership-profile.png"
+            type="button"
+          >
+            <img
+              src="leadership-profile.png"
+              alt="Primeasia University Nutrition Club leadership profile"
+            >
+            <span class="gallery-caption">
+              Nutrition Club leadership
+            </span>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Research -->
+
+    <section class="section" id="research">
+      <div class="container">
+
+        <div class="section-heading fade-up">
+          <span class="section-label">
+            Research and publication
+          </span>
+
+          <h2>
+            Evidence-based academic work
+          </h2>
+        </div>
+
+        <article class="research-card fade-up">
+
+          <div class="research-label">
+            Peer-reviewed research publication
+          </div>
+
+          <h3>
+            Effect of Housing Construction Material on
+            Childhood Acute Respiratory Infection:
+            A Hospital-Based Case-Control Study in Bangladesh
+          </h3>
+
+          <p>
+            Co-author of a peer-reviewed research article
+            published by Springer Nature. My contributions
+            included data collection, literature review,
+            statistical analysis and manuscript preparation.
+          </p>
+
+          <div class="research-tags">
+            <span>Springer Nature</span>
+            <span>Public Health Research</span>
+            <span>Data Analysis</span>
+            <span>Literature Review</span>
+            <span>Academic Collaboration</span>
+          </div>
+
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Leadership and skills -->
+
+    <section class="section section-soft">
+      <div class="container">
+
+        <div class="section-heading fade-up">
+          <span class="section-label">
+            Leadership and capabilities
+          </span>
+
+          <h2>
+            Communication, service and social impact
+          </h2>
+        </div>
+
+        <div class="leadership-grid">
+
+          <article class="leadership-card fade-left">
+
+            <h3>
+              Leadership and volunteering
+            </h3>
+
+            <p>
+              As President of the Primeasia University Nutrition Club,
+              I supported club operations, health and nutrition
+              awareness activities, student engagement,
+              recruitment and event planning.
+            </p>
+
+            <p style="margin-top:14px;">
+              My volunteering experience also includes community
+              engagement and awareness activities connected with
+              UNICEF Bangladesh and other health and social
+              organisations.
+            </p>
+
+          </article>
+
+          <article class="leadership-card fade-right">
+
+            <h3>
+              Professional skills
+            </h3>
+
+            <div class="skills-grid">
+              <span class="skill">Global Public Health</span>
+              <span class="skill">Digital Marketing</span>
+              <span class="skill">Content Creation</span>
+              <span class="skill">Social Media Strategy</span>
+              <span class="skill">Leadership</span>
+              <span class="skill">Public Speaking</span>
+              <span class="skill">Business Development</span>
+              <span class="skill">Research</span>
+              <span class="skill">Data Collection</span>
+              <span class="skill">SPSS</span>
+              <span class="skill">Report Writing</span>
+              <span class="skill">Stakeholder Engagement</span>
+              <span class="skill">Hospitality</span>
+              <span class="skill">Guest Experience</span>
+            </div>
+
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+
+    <section class="section" id="contact">
+      <div class="container">
+
+        <div class="contact-card fade-up">
+
+          <span class="section-label">
+            Contact
+          </span>
+
+          <h2>
+            Let’s connect
+          </h2>
+
+          <p>
+            I am open to professional opportunities,
+            research collaboration, digital marketing projects,
+            content partnerships, public health initiatives
+            and meaningful professional connections.
+          </p>
+
+          <div class="contact-actions">
+
+            <a
+              class="button button-primary"
+              href="https://www.linkedin.com/in/ahmed-rasel-on/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View LinkedIn
+            </a>
+
+            <a
+              class="button"
+              href="mailto:connect.rasel.uk@gmail.com"
+            >
+              connect.rasel.uk@gmail.com
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
     <div class="container">
-
-      <div class="section-heading">
-        <span>About</span>
-        <h2>A multidisciplinary professional</h2>
-      </div>
-
-      <div class="about-text">
-        <p>
-          I am a Global Public Health graduate, digital marketing professional
-          and content creator based in London, United Kingdom. I successfully
-          completed my MSc in Global Public Health at Canterbury Christ Church
-          University.
-        </p>
-
-        <p>
-          My background includes public health nutrition, medical sciences,
-          research, community health programmes, data analysis, reporting and
-          stakeholder communication.
-        </p>
-
-        <p>
-          Alongside my public health work, I have developed practical experience
-          in social media management, content strategy, campaign planning,
-          promotional copywriting, business development and website content
-          optimisation.
-        </p>
-
-        <p>
-          I am particularly interested in opportunities where public health,
-          communication, creativity, technology and social impact come together.
-        </p>
-      </div>
-
+      © 2026 Rosul Ahmed Rasel. All rights reserved.
     </div>
-  </section>
+  </footer>
 
-  <section id="expertise">
-    <div class="container">
+  <!-- Image lightbox -->
 
-      <div class="section-heading">
-        <span>Expertise</span>
-        <h2>What I work on</h2>
-      </div>
+  <div
+    class="lightbox"
+    id="lightbox"
+    aria-hidden="true"
+  >
+    <button
+      class="lightbox-close"
+      id="lightboxClose"
+      type="button"
+      aria-label="Close image"
+    >
+      ×
+    </button>
 
-      <div class="grid">
-
-        <article class="card">
-          <h3>Digital Marketing</h3>
-          <ul>
-            <li>Social media management</li>
-            <li>Digital campaign planning</li>
-            <li>Content marketing</li>
-            <li>Organic audience growth</li>
-            <li>Business development</li>
-            <li>Website content optimisation</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Content Creation</h3>
-          <ul>
-            <li>Content calendar development</li>
-            <li>Reels and short-video concepts</li>
-            <li>Caption and promotional copywriting</li>
-            <li>Campaign concept development</li>
-            <li>Brand communication</li>
-            <li>Audience engagement strategy</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Public Health</h3>
-          <ul>
-            <li>Public health research</li>
-            <li>Data collection and analysis</li>
-            <li>Monitoring and evaluation</li>
-            <li>Literature review</li>
-            <li>Report writing</li>
-            <li>Community health programmes</li>
-          </ul>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-<section id="experience">
-  <div class="container">
-
-    <div class="section-heading">
-      <span>Experience</span>
-      <h2>Professional journey</h2>
-    </div>
-
-    <div class="timeline">
-
-      <!-- Carrot Soft -->
-      <article class="timeline-item">
-        <div class="date">Current</div>
-
-        <h3>Marketing, Content Creation and Business Development</h3>
-
-        <h4>Carrot Soft</h4>
-
-        <p>
-          Supporting businesses through social media strategy, content planning,
-          campaign development, brand communication, client coordination and
-          business development.
-        </p>
-
-        <p>
-          My work includes developing content calendars, creating ideas for
-          social media posts and short-form videos, preparing promotional
-          messaging, coordinating creative production and supporting organic
-          digital growth.
-        </p>
-
-        <div class="experience-tags">
-          <span>Digital Marketing</span>
-          <span>Content Strategy</span>
-          <span>Social Media</span>
-          <span>Business Development</span>
-        </div>
-      </article>
-
-      <!-- Holiday Inn Camden Lock -->
-      <article class="timeline-item featured-experience">
-        <div class="premium-label">International Hospitality</div>
-
-        <div class="date">Current</div>
-
-        <h3>Hospitality Professional</h3>
-
-        <h4>Holiday Inn London – Camden Lock</h4>
-
-        <p>
-          Working within an internationally recognised hotel environment,
-          contributing to a polished and welcoming guest experience through
-          attentive service, professional communication and consistent
-          operational support.
-        </p>
-
-        <p>
-          The role involves engaging with guests from diverse backgrounds,
-          responding to service requirements, collaborating with colleagues
-          across hotel operations and helping maintain high standards of
-          presentation, efficiency and hospitality.
-        </p>
-
-        <div class="experience-tags premium-tags">
-          <span>Guest Experience</span>
-          <span>Hospitality</span>
-          <span>Team Collaboration</span>
-          <span>Service Excellence</span>
-        </div>
-      </article>
-
-      <!-- Primeasia University -->
-      <article class="timeline-item">
-        <div class="date">December 2023 – August 2024</div>
-
-        <h3>Executive Officer</h3>
-
-        <h4>Primeasia University, Dhaka, Bangladesh</h4>
-
-        <p>
-          Provided administrative and project support within an academic
-          environment. Managed documentation, stakeholder communication and
-          reporting while supporting the planning and delivery of institutional
-          activities.
-        </p>
-
-        <div class="experience-tags">
-          <span>Administration</span>
-          <span>Documentation</span>
-          <span>Stakeholder Communication</span>
-          <span>Reporting</span>
-        </div>
-      </article>
-
-      <!-- BRAC -->
-      <article class="timeline-item">
-        <div class="date">Eight-month assignment</div>
-
-        <h3>Technical Assistant, Health Programme</h3>
-
-        <h4>BRAC, Dhaka, Bangladesh</h4>
-
-        <p>
-          Supported public health programmes through field-level data collection,
-          health-indicator monitoring, programme documentation and reporting.
-          Worked with multidisciplinary teams to support community health
-          initiatives and maintain accurate records.
-        </p>
-
-        <div class="experience-tags">
-          <span>Public Health</span>
-          <span>Data Collection</span>
-          <span>Monitoring</span>
-          <span>Programme Reporting</span>
-        </div>
-      </article>
-
-      <!-- Dhaka Ahsania Mission -->
-      <article class="timeline-item">
-        <div class="date">Six-month assignment</div>
-
-        <h3>Field Supervisor, Community Health</h3>
-
-        <h4>Dhaka Ahsania Mission, Bangladesh</h4>
-
-        <p>
-          Supervised community-level public health activities, coordinated field
-          staff, supported health-awareness programmes and maintained data
-          accuracy. Prepared reports for monitoring and evaluation activities.
-        </p>
-
-        <div class="experience-tags">
-          <span>Field Supervision</span>
-          <span>Community Health</span>
-          <span>Team Coordination</span>
-          <span>Monitoring and Evaluation</span>
-        </div>
-      </article>
-
-    </div>
+    <img
+      id="lightboxImage"
+      src=""
+      alt="Expanded gallery image"
+    >
   </div>
-</section>
-  <section id="education">
-    <div class="container">
 
-      <div class="section-heading">
-        <span>Education</span>
-        <h2>Academic background</h2>
-      </div>
+  <script>
+    const menuButton =
+      document.getElementById("menuButton");
 
-      <div class="grid">
+    const navLinks =
+      document.getElementById("navLinks");
 
-        <article class="card">
-          <h3>MSc in Global Public Health</h3>
-          <p>
-            Canterbury Christ Church University, United Kingdom<br>
-            Successfully completed
-          </p>
-        </article>
+    const themeButton =
+      document.getElementById("themeButton");
 
-        <article class="card">
-          <h3>Bachelor of Public Health Nutrition</h3>
-          <p>
-            Primeasia University, Bangladesh<br>
-            Completed in 2023<br>
-            CGPA: 3.84 out of 4.00
-          </p>
-        </article>
+    const lightbox =
+      document.getElementById("lightbox");
 
-        <article class="card">
-          <h3>Diploma of Medical Faculty</h3>
-          <p>
-            Medical Assistant Training School, Bangladesh<br>
-            Completed in 2017
-          </p>
-        </article>
+    const lightboxImage =
+      document.getElementById("lightboxImage");
 
-      </div>
-    </div>
-  </section>
+    const lightboxClose =
+      document.getElementById("lightboxClose");
 
-  <section id="research">
-    <div class="container">
+    menuButton.addEventListener("click", function () {
+      navLinks.classList.toggle("open");
+    });
 
-      <div class="section-heading">
-        <span>Research</span>
-        <h2>Publication and academic work</h2>
-      </div>
+    navLinks.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        navLinks.classList.remove("open");
+      });
+    });
 
-      <article class="publication">
-        <h3>
-          Effect of Housing Construction Material on Childhood Acute
-          Respiratory Infection: A Hospital-Based Case-Control Study in
-          Bangladesh
-        </h3>
+    themeButton.addEventListener("click", function () {
+      document.body.classList.toggle("dark-mode");
 
-        <p>
-          Co-author of a peer-reviewed research article published by Springer
-          Nature in 2024. Contributions included data collection, literature
-          review, statistical analysis and manuscript preparation.
-        </p>
-      </article>
+      const darkModeEnabled =
+        document.body.classList.contains("dark-mode");
 
-    </div>
-  </section>
+      localStorage.setItem(
+        "rasel-theme",
+        darkModeEnabled ? "dark" : "light"
+      );
 
-  <section id="contact">
-    <div class="container">
+      themeButton.textContent =
+        darkModeEnabled ? "☀" : "◐";
+    });
 
-      <div class="contact">
-        <span class="eyebrow">Contact</span>
-        <h2>Let’s connect</h2>
+    const savedTheme =
+      localStorage.getItem("rasel-theme");
 
-        <p>
-          I am open to professional opportunities, public health and research
-          collaborations, digital marketing projects and content partnerships.
-        </p>
+    if (savedTheme === "dark") {
+      document.body.classList.add("dark-mode");
+      themeButton.textContent = "☀";
+    }
 
-        <div class="buttons" style="justify-content:center;">
-          <a class="button button-primary"
-             href="https://www.linkedin.com/in/ahmed-rasel-on/"
-             target="_blank"
-             rel="noopener noreferrer">
-            LinkedIn
-          </a>
+    const animatedElements =
+      document.querySelectorAll(
+        ".fade-up, .fade-left, .fade-right"
+      );
 
-          <a class="button"
-             href="mailto:connect.rasel.uk@gmail.com">
-            Email Me
-          </a>
-        </div>
-      </div>
+    const observer =
+      new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.12
+        }
+      );
 
-    </div>
-  </section>
+    animatedElements.forEach(function (element) {
+      observer.observe(element);
+    });
 
-</main>
+    const galleryItems =
+      document.querySelectorAll(".gallery-item");
 
-<footer>
-  <div class="container">
-    © 2026 Rosul Ahmed Rasel. All rights reserved.
-  </div>
-</footer>
+    galleryItems.forEach(function (item) {
+      item.addEventListener("click", function () {
+        const imagePath =
+          item.getAttribute("data-image");
+
+        lightboxImage.src = imagePath;
+        lightbox.classList.add("open");
+        lightbox.setAttribute("aria-hidden", "false");
+
+        document.body.classList.add("no-scroll");
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove("open");
+      lightbox.setAttribute("aria-hidden", "true");
+
+      lightboxImage.src = "";
+
+      document.body.classList.remove("no-scroll");
+    }
+
+    lightboxClose.addEventListener(
+      "click",
+      closeLightbox
+    );
+
+    lightbox.addEventListener(
+      "click",
+      function (event) {
+        if (event.target === lightbox) {
+          closeLightbox();
+        }
+      }
+    );
+
+    document.addEventListener(
+      "keydown",
+      function (event) {
+        if (event.key === "Escape") {
+          closeLightbox();
+        }
+      }
+    );
+  </script>
 
 </body>
 </html>
