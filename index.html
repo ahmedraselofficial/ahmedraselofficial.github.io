@@ -3,392 +3,909 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rosul Ahmed Rasel | Digital Marketing Specialist | Content Creator</title>
-<meta name="description" content="Rosul Ahmed Rasel, Digital Marketing Specialist, Content Creator, Hospitality & Customer Experience Professional, and Global Public Health Graduate.">
+<meta name="description" content="Rosul Ahmed Rasel - Digital Marketing Specialist, Content Creator, Social Media Professional and MSc Global Public Health Graduate.">
+<title>Rosul Ahmed Rasel | Digital Marketing & Content</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
 <style>
 :root{
-  --bg:#f6f7fa;--surface:#fff;--soft:#eef2f7;--text:#172033;--muted:#657084;
-  --primary:#2859d9;--primary2:#183a93;--gold:#d4ad59;--border:#e1e6ef;
-  --shadow:0 18px 50px rgba(23,32,51,.09);--shadow2:0 30px 80px rgba(23,32,51,.15);
+  --bg:#09111f;
+  --bg2:#0e1930;
+  --card:#111e35;
+  --card2:#152542;
+  --text:#f5f7fb;
+  --muted:#aebbd0;
+  --line:rgba(255,255,255,.10);
+  --accent:#4f7cff;
+  --accent2:#7f9cff;
+  --max:1320px;
+  --radius:24px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:90px}
-body{font-family:Inter,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.7;overflow-x:hidden}
-body.dark{--bg:#0d1626;--surface:#172338;--soft:#1d2a40;--text:#f4f6fa;--muted:#b9c3d2;--border:#2a3850;--shadow:0 18px 50px rgba(0,0,0,.2);--shadow2:0 30px 80px rgba(0,0,0,.35)}
-a{text-decoration:none;color:inherit}img{max-width:100%;display:block}
-.container{width:min(92%,1180px);margin:auto}
-section{padding:100px 0}
-.section-soft{background:var(--soft)}
-.label{color:var(--primary);font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}
-.heading{max-width:820px;margin-bottom:48px}.heading h2{font:700 clamp(38px,5vw,62px)/1.08 Georgia,serif;letter-spacing:-.04em;margin:12px 0 18px}.heading p{color:var(--muted);font-size:18px}
-.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}.reveal.show{opacity:1;transform:none}
-.fade-left{opacity:0;transform:translateX(-35px);transition:opacity .8s ease,transform .8s ease}.fade-left.show{opacity:1;transform:none}
-.fade-right{opacity:0;transform:translateX(35px);transition:opacity .8s ease,transform .8s ease}.fade-right.show{opacity:1;transform:none}
-
-/* NAV */
-header{position:sticky;top:0;z-index:1000;background:color-mix(in srgb,var(--surface) 88%,transparent);backdrop-filter:blur(18px);border-bottom:1px solid var(--border)}
-nav{height:78px;display:flex;align-items:center;justify-content:space-between}
-.brand{font-size:20px;font-weight:900;white-space:nowrap}
-.navlinks{display:flex;align-items:center;gap:20px}.navlinks a{font-size:13px;font-weight:800;color:var(--muted);position:relative}.navlinks a:hover{color:var(--primary)}
-.controls{display:flex;gap:9px;align-items:center}.icon{width:40px;height:40px;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:50%;cursor:pointer}
-.menu{display:none}
+html{scroll-behavior:smooth}
+body{
+  font-family:"DM Sans",Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.65;
+  overflow-x:hidden;
+}
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 85% 10%,rgba(79,124,255,.10),transparent 28%),
+    radial-gradient(circle at 10% 55%,rgba(127,156,255,.05),transparent 30%);
+  z-index:-1;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.container{
+  width:min(var(--max), calc(100% - 96px));
+  margin:0 auto;
+}
+section{
+  padding:120px 0;
+  scroll-margin-top:92px;
+}
+.eyebrow{
+  color:#6f96ff;
+  font-size:.78rem;
+  letter-spacing:.20em;
+  text-transform:uppercase;
+  font-weight:700;
+  margin-bottom:14px;
+}
+.section-title{
+  font-family:"Playfair Display",serif;
+  font-size:clamp(2.4rem,5vw,4.6rem);
+  line-height:1.05;
+  letter-spacing:-.035em;
+  max-width:850px;
+}
+.section-lead{color:var(--muted);max-width:760px;margin-top:20px;font-size:1.05rem}
+.compact-section-title{font-size:clamp(1.8rem,3.2vw,2.9rem);max-width:700px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:13px 20px;border-radius:999px;border:1px solid var(--line);
+  background:#16243d;font-weight:700;transition:.3s ease;
+}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:white}
+.btn:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.25)}
+.nav{
+  position:fixed;top:0;left:0;right:0;height:76px;
+  background:rgba(9,17,31,.82);backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--line);z-index:1000;
+}
+.nav-inner{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-size:1.2rem;font-weight:800;white-space:nowrap}
+.nav-links{display:flex;gap:25px;align-items:center}
+.nav-links a{font-weight:700;font-size:.88rem;color:#c3cede;transition:.25s}
+.nav-links a:hover{color:#fff}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:white;border-radius:12px;padding:9px 12px;font-size:1.2rem}
 
 /* HERO */
-.hero{position:relative;min-height:calc(100vh - 78px);display:grid;align-items:center;overflow:hidden}
-.hero:before{content:"";position:absolute;width:650px;height:650px;right:-260px;top:-250px;border-radius:50%;background:radial-gradient(circle,rgba(40,89,217,.18),transparent 68%);animation:glow 8s ease-in-out infinite}
-@keyframes glow{50%{transform:translateY(25px) scale(1.06)}}
-.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:70px;align-items:center;position:relative;z-index:1}
-.location{color:var(--primary);font-size:12px;font-weight:900;letter-spacing:.13em;text-transform:uppercase;margin-bottom:22px}
-.hero h1{font:700 clamp(55px,8vw,92px)/.98 Georgia,serif;letter-spacing:-.06em}
-.hero-title{font-size:clamp(22px,3vw,32px);line-height:1.4;color:var(--muted);margin:25px 0 20px}
-.hero-desc{font-size:17px;color:var(--muted);max-width:710px}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
-.btn{min-height:50px;padding:0 22px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);font-size:13px;font-weight:900;transition:.3s}
-.btn:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
-.btn.primary{color:#fff;background:linear-gradient(135deg,var(--primary),var(--primary2));border-color:var(--primary)}
-.photo-wrap{max-width:470px;margin:auto;position:relative}
-.photo-frame{aspect-ratio:4/5;overflow:hidden;border-radius:135px 135px 35px 35px;background:#1b2c4c;border:1px solid rgba(212,173,89,.45);box-shadow:var(--shadow2)}
-.photo-frame img{width:100%;height:100%;object-fit:cover;object-position:center top;transition:.7s}.photo-frame:hover img{transform:scale(1.04)}
-.pill{position:absolute;padding:9px 14px;background:color-mix(in srgb,var(--surface) 92%,transparent);border:1px solid var(--border);border-radius:999px;box-shadow:var(--shadow);font-size:11px;font-weight:900;animation:float 4s ease-in-out infinite}.p1{left:-55px;top:20%}.p2{right:-50px;bottom:26%;animation-delay:1s}.p3{left:-25px;bottom:8%;animation-delay:1.7s}
+.hero{
+  min-height:100vh;
+  padding-top:150px;
+  padding-bottom:90px;
+  display:flex;
+  align-items:center;
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(420px,.95fr);
+  gap:72px;
+  align-items:center;
+}
+.location{color:#6f96ff;font-weight:800;letter-spacing:.2em;font-size:.78rem;margin-bottom:20px}
+.hero h1{
+  font-family:"Playfair Display",serif;
+  font-size:clamp(4rem,7.2vw,7.2rem);
+  line-height:.92;
+  letter-spacing:-.055em;
+  max-width:760px;
+  overflow-wrap:normal;
+}
+.hero-role{
+  margin-top:35px;
+  font-size:clamp(1.35rem,2.5vw,2rem);
+  line-height:1.55;color:#c0ccdf;max-width:850px;
+}
+.hero-copy{color:var(--muted);font-size:1.05rem;max-width:690px;margin-top:25px}
+.hero-visual{
+  position:relative;
+  min-height:560px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px 55px;
+}
+.hero-photo{
+  width:min(410px,78vw);height:510px;object-fit:cover;
+  border-radius:210px 210px 28px 28px;
+  background:linear-gradient(145deg,#1c3154,#101b30);
+  border:1px solid rgba(255,255,255,.18);
+  box-shadow:0 30px 80px rgba(0,0,0,.35);
+}
+.float-tag{
+  position:absolute;background:#172743;border:1px solid var(--line);
+  border-radius:999px;padding:13px 18px;font-size:.82rem;font-weight:800;
+  box-shadow:0 12px 35px rgba(0,0,0,.2);
+  animation:float 5s ease-in-out infinite;
+}
+.tag1{top:15%;left:0}
+.tag2{top:48%;right:0;animation-delay:1s}
+.tag3{bottom:11%;left:4%;animation-delay:2s}
 @keyframes float{50%{transform:translateY(-9px)}}
 
-/* ABOUT */
-.two{display:grid;grid-template-columns:1.2fr .8fr;gap:28px}.card{background:var(--surface);border:1px solid var(--border);border-radius:25px;padding:38px;box-shadow:var(--shadow)}.card p{color:var(--muted)}.card p+p{margin-top:16px}
-.strengths{display:grid;gap:0}.strength{padding:15px 0;border-bottom:1px solid var(--border);font-weight:900}.strength:last-child{border:0}
-
-/* JOURNEY */
-.timeline{position:relative;max-width:950px;margin:auto}.timeline:before{content:"";position:absolute;left:18px;top:10px;bottom:10px;width:2px;background:var(--border)}
-.step{position:relative;padding-left:65px;margin-bottom:36px}.dot{position:absolute;left:8px;top:8px;width:22px;height:22px;border-radius:50%;background:var(--primary);border:6px solid var(--soft)}.step h3{font:700 28px Georgia,serif}.step p{color:var(--muted)}
+/* CARDS */
+.grid{display:grid;gap:18px}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+.card{
+  background:linear-gradient(145deg,rgba(21,37,66,.92),rgba(14,26,46,.92));
+  border:1px solid var(--line);border-radius:var(--radius);padding:28px;
+  transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease;
+}
+.card:hover{transform:translateY(-6px);border-color:rgba(127,156,255,.35);box-shadow:0 18px 50px rgba(0,0,0,.18)}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;margin-top:55px}
+.about-copy p{color:var(--muted);margin-bottom:18px;font-size:1.05rem}
+.strengths{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.strength{padding:18px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.025);font-weight:700}
+.timeline{margin-top:55px;border-left:1px solid var(--line);margin-left:10px}
+.timeline-item{position:relative;padding:0 0 42px 38px}
+.timeline-item:before{
+  content:"";position:absolute;left:-7px;top:5px;width:13px;height:13px;
+  border-radius:50%;background:var(--accent);box-shadow:0 0 0 7px rgba(79,124,255,.12)
+}
+.timeline h3{font-size:1.25rem}.timeline p{color:var(--muted);margin-top:5px}
 
 /* EXPERIENCE */
-.exp-grid{display:grid;gap:22px}.exp{background:var(--surface);border:1px solid var(--border);border-radius:25px;padding:35px;box-shadow:var(--shadow);transition:.35s}.exp:hover{transform:translateY(-6px);box-shadow:var(--shadow2)}.exp h3{font:700 32px Georgia,serif}.company{color:var(--primary);font-weight:900;margin:5px 0 15px}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.tag{font-size:11px;font-weight:900;color:var(--muted);border:1px solid var(--border);padding:7px 11px;border-radius:999px;background:var(--soft)}
-
-/* CARDS */
-.six{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.service{min-height:230px;background:var(--surface);border:1px solid var(--border);border-radius:24px;padding:30px;box-shadow:var(--shadow);transition:.35s}.service:hover{transform:translateY(-8px);box-shadow:var(--shadow2);border-color:var(--primary)}.num{color:var(--primary);font-weight:900;font-size:13px}.service h3{font:700 25px Georgia,serif;margin:18px 0 10px}.service p{color:var(--muted);font-size:14px}
+.experience-box{margin-top:55px}
+.experience-box h3{font-size:2rem;margin-bottom:10px}
+.experience-box>p{color:var(--muted);max-width:800px}
+.service-card h3{margin-top:12px}.service-card p{color:var(--muted);margin-top:8px;font-size:.94rem}
+.number{font-size:.8rem;color:#7194ff;font-weight:800;letter-spacing:.12em}
 
 /* CLIENTS */
-.client-window{overflow:hidden}.client-track{display:flex;width:max-content;gap:18px;animation:marquee 38s linear infinite}.client-window:hover .client-track{animation-play-state:paused}
-@keyframes marquee{to{transform:translateX(-50%)}}
-.client{width:215px;min-width:215px;height:225px;background:var(--surface);border:1px solid var(--border);border-radius:25px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:var(--shadow);transition:.35s}.client:hover{transform:translateY(-8px);border-color:var(--primary);box-shadow:var(--shadow2)}
-.client img{width:115px;height:115px;object-fit:contain;border-radius:50%;background:#fff;border:1px solid #e3e6eb;padding:8px;box-shadow:0 10px 25px rgba(0,0,0,.08);transition:.4s}.client:hover img{transform:scale(1.06)}.client-name{font-size:14px;font-weight:900;margin-top:14px;line-height:1.3}.client-type{font-size:10px;color:var(--muted);margin-top:3px}
-
-/* CAMPAIGNS */
-.campaign-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.campaign{min-height:310px;padding:36px;border-radius:27px;color:#fff;background:linear-gradient(135deg,#14213a,#294675);box-shadow:var(--shadow2);position:relative;overflow:hidden}.campaign:nth-child(2){background:linear-gradient(135deg,#3b1e38,#693b55)}.campaign:after{content:"";position:absolute;width:230px;height:230px;border-radius:50%;right:-90px;top:-80px;background:rgba(255,255,255,.08)}.campaign small{color:#d8e1ff;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.campaign h3{font:700 34px/1.2 Georgia,serif;margin:20px 0 12px}.campaign p{color:rgba(255,255,255,.75);max-width:600px}.campaign .tag{color:#e4ebff;background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.14)}
-
-/* CONTENT */
-.portfolio-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.portfolio-card{height:310px;border-radius:23px;overflow:hidden;position:relative;background:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow)}.portfolio-card:first-child{grid-column:span 2;grid-row:span 2;height:637px}.portfolio-card img{width:100%;height:100%;object-fit:cover;transition:.7s}.portfolio-card:hover img{transform:scale(1.07);filter:brightness(.72)}.overlay{position:absolute;left:20px;right:20px;bottom:18px;color:#fff;opacity:0;transform:translateY(10px);transition:.35s}.portfolio-card:hover .overlay{opacity:1;transform:none}.overlay h3{font-size:18px}.overlay span{font-size:11px}
+.client-marquee{
+  margin-top:52px;
+  position:relative;
+  overflow:hidden;
+  padding:16px 0 28px;
+  mask-image:linear-gradient(to right,transparent 0,#000 7%,#000 93%,transparent 100%);
+  -webkit-mask-image:linear-gradient(to right,transparent 0,#000 7%,#000 93%,transparent 100%);
+}
+.client-track{
+  display:flex;
+  width:max-content;
+  gap:24px;
+  animation:clientScroll 42s linear infinite;
+  will-change:transform;
+}
+.client-marquee:hover .client-track{animation-play-state:paused}
+.client-item{
+  width:190px;
+  flex:0 0 190px;
+  text-align:center;
+  padding:10px 8px;
+}
+.client-logo{
+  width:128px;
+  height:128px;
+  margin:0 auto 14px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#fff;
+  border:1px solid rgba(255,255,255,.15);
+  overflow:hidden;
+  box-shadow:0 12px 30px rgba(0,0,0,.16);
+  transition:transform .45s cubic-bezier(.22,1,.36,1),box-shadow .45s ease;
+}
+.client-logo img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  padding:12px;
+}
+.client-item:hover .client-logo{
+  transform:translateY(-7px) scale(1.055);
+  box-shadow:0 20px 42px rgba(0,0,0,.28);
+}
+.client-item h3{
+  font-size:.9rem;
+  line-height:1.35;
+  font-weight:800;
+}
+.client-item span{
+  display:block;
+  margin-top:3px;
+  color:#93a1b7;
+  font-size:.74rem;
+}
+@keyframes clientScroll{
+  from{transform:translateX(0)}
+  to{transform:translateX(calc(-50% - 12px))}
+}
+.client-note{display:none}
+/* CAMPAIGNS / CONTENT */
+.image-missing{
+  display:flex !important;
+  align-items:center;
+  justify-content:center;
+  min-height:120px;
+  background:linear-gradient(145deg,#152542,#0f1a2d) !important;
+  border:1px dashed rgba(127,156,255,.28) !important;
+}
+.image-missing::after{
+  content:"Add image";
+  color:#73829a;
+  font-size:.78rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.project-image{
+  width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:17px;
+  background:#172743;border:1px solid var(--line);
+}
+.project-card{padding:16px;overflow:hidden}
+.project-card .project-body{padding:17px 7px 4px}
+.project-card h3{font-size:1.2rem}.project-card p{color:var(--muted);margin-top:7px;font-size:.92rem}
+.pill-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.pill{font-size:.75rem;padding:5px 9px;border:1px solid var(--line);border-radius:999px;color:#c6d1e3}
 
 /* INFLUENCER */
-.influencer-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.influencer{overflow:hidden;background:var(--surface);border:1px solid var(--border);border-radius:27px;box-shadow:var(--shadow);transition:.35s}.influencer:hover{transform:translateY(-8px);box-shadow:var(--shadow2)}.influencer-img{height:530px;background:var(--soft);overflow:hidden}.influencer-img img{width:100%;height:100%;object-fit:cover;transition:.7s}.influencer:hover img{transform:scale(1.035)}.influencer-body{padding:28px}.influencer-body small{color:var(--primary);font-weight:900;letter-spacing:.12em;text-transform:uppercase}.influencer-body h3{font:700 29px Georgia,serif;margin:9px 0}.influencer-body p{color:var(--muted)}.proof{margin-top:16px;font-weight:900;color:var(--primary)}
+.proof-grid{
+  margin-top:34px;
+  max-width:960px;
+  gap:18px;
+}
+.proof-img{
+  width:100%;
+  height:420px;
+  max-height:none;
+  border-radius:14px;
+  border:1px solid var(--line);
+  background:#111827;
+  object-fit:contain;
+  object-position:center;
+}
+.proof-card{padding:10px;overflow:hidden;max-width:470px}
+.proof-card h3{margin:11px 5px 4px;font-size:.98rem}
+.proof-card p{color:var(--muted);margin:0 5px 8px;font-size:.84rem}
+.metric{display:inline-block;color:#8ca8ff;font-weight:800;margin:0 5px 8px;font-size:.8rem}
 
-/* EDUCATION */
-.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.edu{padding:38px;background:var(--surface);border:1px solid var(--border);border-radius:25px;box-shadow:var(--shadow)}.edu h3{font:700 30px Georgia,serif;margin:17px 0 8px}.edu p{color:var(--muted)}.convocation{margin-top:25px;border-radius:24px;overflow:hidden;box-shadow:var(--shadow2);border:1px solid var(--border)}.convocation img{width:100%;max-height:570px;object-fit:cover}
+/* VISUAL SKILLS */
+.visual-row{margin-top:55px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.visual-tile{position:relative;overflow:hidden;border-radius:22px;border:1px solid var(--line);min-height:270px;background:#152542}
+.visual-tile img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.visual-tile:hover img{transform:scale(1.035)}
+.visual-overlay{position:absolute;inset:auto 0 0;padding:35px 22px 20px;background:linear-gradient(transparent,rgba(0,0,0,.8))}
+.visual-overlay h3{font-size:1.1rem}.visual-overlay p{color:#d0d7e4;font-size:.88rem}
 
-/* ACHIEVEMENTS */
-.achievement-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.achievement{overflow:hidden;background:var(--surface);border:1px solid var(--border);border-radius:25px;box-shadow:var(--shadow);transition:.35s}.achievement:hover{transform:translateY(-8px);box-shadow:var(--shadow2)}.achievement img{width:100%;height:330px;object-fit:cover;transition:.7s}.achievement:hover img{transform:scale(1.04)}.achievement-body{padding:28px}.achievement-body small{color:var(--primary);font-weight:900;text-transform:uppercase;letter-spacing:.1em}.achievement-body h3{font:700 27px Georgia,serif;margin:10px 0}.achievement-body p{color:var(--muted)}
-
-/* RESEARCH */
-.research{padding:50px;border-radius:30px;color:#fff;background:linear-gradient(135deg,#152440,#2a4a83);box-shadow:var(--shadow2)}.research h3{font:700 clamp(30px,4vw,46px)/1.2 Georgia,serif;margin:14px 0 18px}.research p{color:rgba(255,255,255,.78);max-width:900px}.research .tag{color:#e3ebff;background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15)}
+/* EDUCATION / LEADERSHIP */
+.edu-feature{margin-top:55px;display:grid;grid-template-columns:.8fr 1.2fr;gap:25px;align-items:stretch}
+.edu-photo{width:100%;height:100%;min-height:360px;object-fit:cover;border-radius:22px;border:1px solid var(--line)}
+.edu-card{display:flex;flex-direction:column;justify-content:center}
+.edu-card h3{font-size:1.8rem}.edu-card p{color:var(--muted);margin-top:8px}
+.leadership{margin-top:55px}
+.lead-card img{width:100%;height:220px;object-fit:cover;border-radius:16px;margin-bottom:17px}
+.lead-card h3{font-size:1.05rem}.lead-card p{color:var(--muted);font-size:.9rem;margin-top:6px}
 
 /* ENDORSEMENTS */
-.endorsements{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.quote{padding:30px;background:var(--surface);border:1px solid var(--border);border-radius:24px;box-shadow:var(--shadow);min-height:190px}.quote p{color:var(--muted);font-style:italic}.quote strong{display:block;margin-top:18px}.endorse-cta{margin-top:25px;text-align:center}
+.endorsement-wrap{margin-top:55px}
+.quote-card{min-height:210px;display:flex;flex-direction:column;justify-content:space-between}
+.quote{font-family:"Playfair Display",serif;font-size:1.45rem;line-height:1.4}
+.quote-author{color:#91a8d2;font-weight:700;font-size:.88rem}
+.endorse-cta{margin-top:18px;text-align:center;padding:35px;border:1px solid var(--line);border-radius:22px;background:rgba(79,124,255,.06)}
 
 /* CONTACT */
-.contact{padding:75px 30px;text-align:center;background:var(--surface);border:1px solid var(--border);border-radius:35px;box-shadow:var(--shadow2)}.contact h2{font:700 clamp(42px,6vw,68px)/1.08 Georgia,serif}.contact p{max-width:720px;margin:18px auto;color:var(--muted);font-size:18px}.contact .actions{justify-content:center}
+.contact-box{
+  margin-top:55px;padding:60px;border-radius:30px;
+  background:linear-gradient(135deg,#172b4f,#101d35);
+  border:1px solid var(--line);
+}
+.email{font-size:clamp(1.4rem,3vw,2.4rem);font-weight:800;margin-top:18px;word-break:break-word}
+.footer{padding:35px 0;border-top:1px solid var(--line);color:#93a1b7}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.reveal{
+  opacity:0;
+  transform:translateY(24px);
+  transition:
+    opacity .8s ease,
+    transform .8s cubic-bezier(.22,1,.36,1);
+}
+.reveal.show{opacity:1;transform:none}
 
-/* FOOTER */
-footer{border-top:1px solid var(--border);padding:35px 0;text-align:center;color:var(--muted);font-size:13px}
+@media(min-width:1440px){
+  .container{
+    width:min(1320px, calc(100% - 128px));
+  }
+}
 
-/* RESPONSIVE */
-@media(max-width:1000px){
- .hero-grid,.two{grid-template-columns:1fr}.photo-wrap{max-width:470px}.six{grid-template-columns:1fr 1fr}.portfolio-grid{grid-template-columns:1fr 1fr}.portfolio-card:first-child{grid-column:span 2;grid-row:auto;height:400px}.campaign-grid,.influencer-grid,.edu-grid,.achievement-grid{grid-template-columns:1fr 1fr}.endorsements{grid-template-columns:1fr 1fr}
+@media(max-width:1050px){
+  .nav-links{gap:14px}
+  .nav-links a{font-size:.78rem}
+  .hero-grid,.about-grid,.edu-feature{grid-template-columns:1fr}
+  .hero{
+    padding-top:130px;
+    padding-bottom:70px;
+  }
+  .hero-visual{
+    min-height:470px;
+    padding-left:45px;
+    padding-right:45px;
+  }
+  .hero-photo{height:440px}
 }
 @media(max-width:800px){
- .navlinks{position:absolute;left:4%;right:4%;top:78px;display:none;flex-direction:column;align-items:flex-start;padding:22px;background:var(--surface);border:1px solid var(--border);border-radius:20px;box-shadow:var(--shadow2)}.navlinks.open{display:flex}.menu{display:block}
- .six,.campaign-grid,.influencer-grid,.edu-grid,.achievement-grid,.endorsements{grid-template-columns:1fr}.p1,.p2,.p3{display:none}.portfolio-grid{grid-template-columns:1fr}.portfolio-card,.portfolio-card:first-child{grid-column:auto;height:320px}
- section{padding:80px 0}.influencer-img{height:450px}.client{width:195px;min-width:195px}
+  section{padding:80px 0}.container{width:min(var(--max),calc(100% - 32px))}
+  .nav-inner{padding:0 15px}.brand{font-size:1rem}
+  .menu-btn{display:block}
+  .nav-links{
+    position:absolute;top:76px;left:15px;right:15px;
+    display:none;flex-direction:column;align-items:flex-start;
+    padding:20px;background:#101d32;border:1px solid var(--line);border-radius:18px;
+  }
+  .nav-links.open{display:flex}
+  .grid-3,.grid-4,.grid-2{grid-template-columns:1fr}
+  .hero h1{
+    font-size:clamp(3.7rem,16vw,5.6rem);
+    max-width:100%;
+  }
+  .hero-role{font-size:1.25rem}
+  .hero-visual{
+    min-height:400px;
+    padding:15px 25px;
+  }
+  .hero-photo{height:390px;width:290px}
+  .float-tag{font-size:.72rem;padding:10px 13px}
+  .tag1{left:0}
+  .tag2{right:0}
+  .tag3{left:0}
+  .strengths{grid-template-columns:1fr}
+  .visual-row{grid-template-columns:1fr}
+  .client-marquee{mask-image:none;-webkit-mask-image:none}
+  .client-track{gap:12px;animation-duration:34s}
+  .client-item{width:155px;flex-basis:155px}
+  .client-logo{width:105px;height:105px}
+  .proof-grid{max-width:100%}
+  .proof-img{height:360px}
+  .contact-box{padding:35px 24px}
 }
-@media(max-width:550px){
- .brand{font-size:16px}.hero h1{font-size:54px}.hero{padding:80px 0}.photo-frame{border-radius:95px 95px 28px 28px}.actions{flex-direction:column}.btn{width:100%}.card,.exp,.service,.edu{padding:28px}.research{padding:34px 25px}.achievement img{height:290px}
-}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal,.fade-left,.fade-right{opacity:1;transform:none}}
 </style>
 </head>
+
 <body>
 
-<header>
-<nav class="container">
-<a class="brand" href="#home">Rosul Ahmed Rasel</a>
-<div class="navlinks" id="navlinks">
-<a href="#home">Home</a><a href="#about">About</a><a href="#experience">Experience</a>
-<a href="#clients">Clients</a><a href="#campaigns">Campaigns</a><a href="#content">Content</a>
-<a href="#influencer">Influencer</a><a href="#education">Education</a><a href="#endorsements">Endorsements</a><a href="#contact">Contact</a>
-</div>
-<div class="controls">
-<button class="icon" id="theme" aria-label="Toggle theme">◐</button>
-<button class="icon menu" id="menu" aria-label="Open menu">☰</button>
-</div>
-</nav>
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="brand">Rosul Ahmed Rasel</a>
+    <button class="menu-btn" aria-label="Open menu">☰</button>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#clients">Clients</a>
+      <a href="#campaigns">Campaigns</a>
+      <a href="#content">Content</a>
+      <a href="#influencer">Influencer</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#endorsements">Endorsements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
 <main>
 
-<!-- 2. HERO -->
-<section class="hero" id="home">
-<div class="container hero-grid">
-<div class="fade-left">
-<div class="location">London, United Kingdom</div>
-<h1>Rosul Ahmed Rasel</h1>
-<p class="hero-title">Digital Marketing Specialist<br>Content Creator | Social Media Professional<br>Hospitality &amp; Customer Experience | Global Public Health Graduate</p>
-<p class="hero-desc">Creating engaging digital content, managing social media campaigns and supporting brands through creative communication, while bringing a background in hospitality, public health, research and leadership.</p>
-<div class="actions">
-<a class="btn primary" href="#content">View My Work</a>
-<a class="btn" href="Rosul_Ahmed_Rasel_CV.pdf" download>Download CV</a>
-<a class="btn" href="https://www.linkedin.com/in/ahmed-rasel-on/" target="_blank">LinkedIn</a>
-</div>
-</div>
-<div class="photo-wrap fade-right">
-<div class="photo-frame"><img src="profile.jpeg" alt="Rosul Ahmed Rasel professional photo"></div>
-<div class="pill p1">Digital Marketing</div><div class="pill p2">Hospitality &amp; Guest Experience</div><div class="pill p3">Global Public Health</div>
-</div>
-</div>
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="container hero-grid">
+    <div class="reveal">
+      <div class="location">LONDON, UNITED KINGDOM</div>
+      <h1>Rosul Ahmed Rasel</h1>
+      <div class="hero-role">
+        Digital Marketing Specialist<br>
+        Content Creator | Social Media Professional<br>
+        Hospitality &amp; Customer Experience | Global Public Health Graduate
+      </div>
+      <p class="hero-copy">
+        Creating engaging digital content, managing social media campaigns and supporting brands through creative communication, while bringing a background in hospitality, public health, research and leadership.
+      </p>
+      <div class="btns">
+        <a class="btn primary" href="#content">View My Work</a>
+        <a class="btn" href="assets/Rosul-Ahmed-Rasel-CV.pdf" target="_blank">Download CV</a>
+        <a class="btn" href="YOUR-LINKEDIN-URL" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <!-- Rename your professional portrait to: profile.jpg -->
+      <img class="hero-photo" src="assets/profile/profile.jpg" alt="Rosul Ahmed Rasel professional portrait">
+      <span class="float-tag tag1">Digital Marketing</span>
+      <span class="float-tag tag2">Hospitality &amp; Guest Experience</span>
+      <span class="float-tag tag3">Global Public Health</span>
+    </div>
+  </div>
 </section>
 
-<!-- 3. ABOUT -->
+<!-- ABOUT -->
 <section id="about">
-<div class="container">
-<div class="heading reveal"><span class="label">About Me</span><h2>A multidisciplinary professional</h2><p>My professional identity connects digital communication, creative content, hospitality, public health, research and leadership.</p></div>
-<div class="two">
-<div class="card fade-left">
-<p>I am a Global Public Health graduate based in London with practical experience in digital marketing, content creation, social media management and client communication.</p>
-<p>Through Carrot Soft, I have supported UK food, hospitality and retail brands with social media content, campaign concepts, promotional creative and influencer collaborations.</p>
-<p>My hospitality experience has strengthened my communication, teamwork, service and guest-experience skills, while my academic background has developed research, analytical thinking and evidence-based communication.</p>
-</div>
-<div class="card fade-right">
-<div class="strength">Digital Marketing</div><div class="strength">Social Media Management</div><div class="strength">Content Creation</div><div class="strength">Campaign Planning</div><div class="strength">Brand Communication</div><div class="strength">Influencer Collaboration</div><div class="strength">Research &amp; Analytics</div><div class="strength">Public Health Communication</div>
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="eyebrow reveal">About Me</div>
+    <h2 class="section-title reveal">Creative communication backed by research, people skills and real client work.</h2>
+
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p>
+          I work across digital marketing, social media management and content creation, supporting UK-based brands with creative campaigns, visual communication and audience-focused content.
+        </p>
+        <p>
+          My background also includes hospitality and customer-facing experience, alongside an MSc in Global Public Health. This combination gives me a practical understanding of communication, people, research and professional environments.
+        </p>
+        <p>
+          I enjoy turning ideas into clear visual stories, adapting content to different audiences and working collaboratively with brands, creators and clients.
+        </p>
+      </div>
+
+      <div class="strengths reveal">
+        <div class="strength">Digital Marketing</div>
+        <div class="strength">Social Media Management</div>
+        <div class="strength">Content Creation</div>
+        <div class="strength">Campaign Planning</div>
+        <div class="strength">Brand Communication</div>
+        <div class="strength">Influencer Collaboration</div>
+        <div class="strength">Research &amp; Analytics</div>
+        <div class="strength">Public Health Communication</div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- 4. PROFESSIONAL JOURNEY -->
-<section class="section-soft" id="journey">
-<div class="container">
-<div class="heading reveal"><span class="label">Professional Journey</span><h2>A journey across disciplines</h2><p>Academic learning, digital marketing, social media, hospitality and professional experience brought together.</p></div>
-<div class="timeline">
-<div class="step reveal"><span class="dot"></span><h3>MSc Global Public Health</h3><p>Canterbury Christ Church University, UK</p></div>
-<div class="step reveal"><span class="dot"></span><h3>Digital Marketing &amp; Content Creation</h3><p>UK-based client work through Carrot Soft</p></div>
-<div class="step reveal"><span class="dot"></span><h3>Social Media &amp; Brand Campaigns</h3><p>UK food, hospitality, retail and local brands</p></div>
-<div class="step reveal"><span class="dot"></span><h3>Hospitality &amp; Guest Experience</h3><p>International hospitality environment and customer experience</p></div>
-<div class="step reveal"><span class="dot"></span><h3>Previous Professional Experience</h3><p>Executive, communication, project and public health-related professional experience</p></div>
-</div>
-</div>
-</section>
-
-<!-- 5. DIGITAL MARKETING EXPERIENCE -->
+<!-- EXPERIENCE -->
 <section id="experience">
-<div class="container">
-<div class="heading reveal"><span class="label">Experience</span><h2>Digital marketing experience</h2><p>Portfolio-focused work rather than a generic job description.</p></div>
-<div class="exp-grid">
-<div class="exp reveal"><h3>Carrot Soft Ltd</h3><div class="company">Digital Marketing &amp; Content Creation</div><p>Supporting UK clients through social media management, content planning, creative development, campaign execution, client communication and influencer collaboration.</p><div class="tags"><span class="tag">Social Media Management</span><span class="tag">Content Strategy</span><span class="tag">Creative Content</span><span class="tag">Campaign Planning</span><span class="tag">Brand Communication</span><span class="tag">Influencer Collaboration</span><span class="tag">Trend-Based Marketing</span><span class="tag">Client Management</span></div></div>
-<div class="exp reveal"><h3>Hospitality &amp; Customer Experience</h3><div class="company">International hospitality experience</div><p>Experience working in a professional hospitality environment where communication, teamwork, guest support, service standards and attention to detail are central.</p><div class="tags"><span class="tag">Guest Experience</span><span class="tag">Hospitality Operations</span><span class="tag">Customer Service</span><span class="tag">Communication</span><span class="tag">Teamwork</span></div></div>
-</div>
-</div>
+  <div class="container">
+    <div class="eyebrow reveal">Professional Journey</div>
+    <h2 class="section-title reveal">A career shaped by communication, creativity and people.</h2>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <h3>MSc Global Public Health</h3>
+        <p>Canterbury Christ Church University, UK</p>
+      </div>
+      <div class="timeline-item reveal">
+        <h3>Digital Marketing &amp; Content Creation</h3>
+        <p>UK-based client work across food, hospitality, retail and local services.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <h3>Social Media &amp; Brand Campaigns</h3>
+        <p>Creative production, campaign planning, trend-based content and social media management.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <h3>Hospitality &amp; Customer Experience</h3>
+        <p>Professional customer-facing and executive experience.</p>
+      </div>
+    </div>
+
+    <div class="experience-box card reveal">
+      <div class="eyebrow">Carrot Soft Ltd</div>
+      <h3>Digital Marketing &amp; Social Media</h3>
+      <p>
+        Supporting UK food, hospitality, retail and local-service brands through social media planning, creative content, visual campaigns, influencer collaborations and client communication.
+      </p>
+      <div class="grid grid-4" style="margin-top:25px">
+        <div><strong>Social Media</strong><br><span style="color:var(--muted)">Planning &amp; management</span></div>
+        <div><strong>Creative Content</strong><br><span style="color:var(--muted)">Posts, reels &amp; visuals</span></div>
+        <div><strong>Campaigns</strong><br><span style="color:var(--muted)">Seasonal &amp; promotional</span></div>
+        <div><strong>Client Work</strong><br><span style="color:var(--muted)">Communication &amp; delivery</span></div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- 6. CLIENT PORTFOLIO -->
-<section class="section-soft" id="clients">
-<div class="container">
-<div class="heading reveal"><span class="label">Client Portfolio</span><h2>Brands &amp; organisations I've worked with</h2><p>Selected clients across food, hospitality, retail and education.</p></div>
-<div class="client-window reveal"><div class="client-track">
-<!-- SET 1 -->
-<div class="client"><img src="budgens-islington.png" alt="Budgens Islington"><div class="client-name">Budgens Islington</div><div class="client-type">Retail &amp; Grocery</div></div>
-<div class="client"><img src="budgens-east-finchley.png" alt="Budgens East Finchley"><div class="client-name">Budgens East Finchley</div><div class="client-type">Retail &amp; Grocery</div></div>
-<div class="client"><img src="lena-lu.png" alt="Lena Lu Donut Bar"><div class="client-name">Lena Lu Donut Bar</div><div class="client-type">Food &amp; Hospitality</div></div>
-<div class="client"><img src="habibi-camden.png" alt="Habibi Camden"><div class="client-name">Habibi Camden</div><div class="client-type">Food &amp; Hospitality</div></div>
-<div class="client"><img src="selekt-chicken.png" alt="Selekt Chicken Archway"><div class="client-name">Selekt Chicken Archway</div><div class="client-type">Food &amp; Hospitality</div></div>
-<div class="client"><img src="oishii-sushi.png" alt="Oishii Sushi Islington"><div class="client-name">Oishii Sushi Islington</div><div class="client-type">Food &amp; Hospitality</div></div>
-<div class="client"><img src="juvel.png" alt="Juvel"><div class="client-name">Juvel</div><div class="client-type">Food &amp; Beverage</div></div>
-<div class="client"><img src="house-of-dishes.png" alt="House of Dishes"><div class="client-name">House of Dishes</div><div class="client-type">Food &amp; Hospitality</div></div>
-<div class="client"><img src="snow-laundry.png" alt="Snow Laundry"><div class="client-name">Snow Laundry</div><div class="client-type">Local Business</div></div>
-<div class="client"><img src="penang-city.png" alt="Penang City"><div class="client-name">Penang City UK</div><div class="client-type">Food &amp; Hospitality</div></div>
-<div class="client"><img src="penang-city.png" alt="Penang City Finsbury Park"><div class="client-name">Penang City Finsbury Park</div><div class="client-type">Food &amp; Hospitality</div></div>
-<div class="client"><img src="firebox.png" alt="Firebox Halal Food"><div class="client-name">Firebox Halal Food</div><div class="client-type">Food &amp; Hospitality</div></div>
-<div class="client"><img src="primeasia-university.png" alt="Primeasia University"><div class="client-name">Primeasia University</div><div class="client-type">Higher Education</div></div>
-<!-- SET 2 FOR SEAMLESS LOOP -->
-<div class="client"><img src="budgens-islington.png" alt="Budgens Islington"><div class="client-name">Budgens Islington</div><div class="client-type">Retail &amp; Grocery</div></div>
-<div class="client"><img src="budgens-east-finchley.png" alt="Budgens East Finchley"><div class="client-name">Budgens East Finchley</div><div class="client-type">Retail &amp; Grocery</div></div>
-<div class="client"><img src="lena-lu.png" alt="Lena Lu Donut Bar"><div class="client-name">Lena Lu Donut Bar</div><div class="client-type">Food &amp; Hospitality</div></div>
-<div class="client"><img src="habibi-camden.png" alt="Habibi Camden"><div class="client-name">Habibi Camden</div><div class="client-type">Food &amp; Hospitality</div></div>
-<div class="client"><img src="selekt-chicken.png" alt="Selekt Chicken Archway"><div class="client-name">Selekt Chicken Archway</div><div class="client-type">Food &amp; Hospitality</div></div>
-<div class="client"><img src="oishii-sushi.png" alt="Oishii Sushi Islington"><div class="client-name">Oishii Sushi Islington</div><div class="client-type">Food &amp; Hospitality</div></div>
-<div class="client"><img src="juvel.png" alt="Juvel"><div class="client-name">Juvel</div><div class="client-type">Food &amp; Beverage</div></div>
-<div class="client"><img src="house-of-dishes.png" alt="House of Dishes"><div class="client-name">House of Dishes</div><div class="client-type">Food &amp; Hospitality</div></div>
-<div class="client"><img src="snow-laundry.png" alt="Snow Laundry"><div class="client-name">Snow Laundry</div><div class="client-type">Local Business</div></div>
-<div class="client"><img src="penang-city.png" alt="Penang City"><div class="client-name">Penang City UK</div><div class="client-type">Food &amp; Hospitality</div></div>
-<div class="client"><img src="penang-city.png" alt="Penang City Finsbury Park"><div class="client-name">Penang City Finsbury Park</div><div class="client-type">Food &amp; Hospitality</div></div>
-<div class="client"><img src="firebox.png" alt="Firebox Halal Food"><div class="client-name">Firebox Halal Food</div><div class="client-type">Food &amp; Hospitality</div></div>
-<div class="client"><img src="primeasia-university.png" alt="Primeasia University"><div class="client-name">Primeasia University</div><div class="client-type">Higher Education</div></div>
-</div></div>
-</div>
+<!-- CLIENTS -->
+<section id="clients">
+  <div class="container">
+    <div class="eyebrow reveal">Client Portfolio</div>
+    <h2 class="section-title reveal">Brands &amp; organisations I've worked with.</h2>
+    <p class="section-lead reveal">Selected UK food, hospitality, retail and organisational work.</p>
+
+    <div class="client-marquee reveal" aria-label="Brands and organisations">
+      <div class="client-track">
+
+        <!-- First set -->
+        <div class="client-item">
+          <div class="client-logo"><img src="assets/logos/budgens-islington.png" alt="Budgens Islington"></div>
+          <h3>Budgens Islington</h3><span>Retail &amp; Grocery</span>
+        </div>
+        <div class="client-item">
+          <div class="client-logo"><img src="assets/logos/budgens-east-finchley.png" alt="Budgens East Finchley"></div>
+          <h3>Budgens East Finchley</h3><span>Retail &amp; Grocery</span>
+        </div>
+        <div class="client-item">
+          <div class="client-logo"><img src="assets/logos/lena-lu.png" alt="Lena Lu Donut Bar"></div>
+          <h3>Lena Lu Donut Bar</h3><span>Food &amp; Hospitality</span>
+        </div>
+        <div class="client-item">
+          <div class="client-logo"><img src="assets/logos/habibi-camden.png" alt="Habibi Camden"></div>
+          <h3>Habibi Camden</h3><span>Food &amp; Hospitality</span>
+        </div>
+        <div class="client-item">
+          <div class="client-logo"><img src="assets/logos/selekt-chicken.png" alt="Selekt Chicken Archway"></div>
+          <h3>Selekt Chicken Archway</h3><span>Food &amp; Hospitality</span>
+        </div>
+        <div class="client-item">
+          <div class="client-logo"><img src="assets/logos/oishii-sushi.png" alt="Oishii Sushi Islington"></div>
+          <h3>Oishii Sushi Islington</h3><span>Food &amp; Hospitality</span>
+        </div>
+        <div class="client-item">
+          <div class="client-logo"><img src="assets/logos/juvel.png" alt="Juvel"></div>
+          <h3>Juvel</h3><span>Food &amp; Hospitality</span>
+        </div>
+        <div class="client-item">
+          <div class="client-logo"><img src="assets/logos/house-of-dishes.png" alt="House of Dishes"></div>
+          <h3>House of Dishes</h3><span>Food &amp; Hospitality</span>
+        </div>
+        <div class="client-item">
+          <div class="client-logo"><img src="assets/logos/snow-laundry.png" alt="Snow Laundry"></div>
+          <h3>Snow Laundry</h3><span>Local Services</span>
+        </div>
+        <div class="client-item">
+          <div class="client-logo"><img src="assets/logos/penang-city-uk.png" alt="Penang City UK"></div>
+          <h3>Penang City UK</h3><span>Food &amp; Hospitality</span>
+        </div>
+        <div class="client-item">
+          <div class="client-logo"><img src="assets/logos/penang-city-finsbury-park.png" alt="Penang City Finsbury Park"></div>
+          <h3>Penang City Finsbury Park</h3><span>Food &amp; Hospitality</span>
+        </div>
+        <div class="client-item">
+          <div class="client-logo"><img src="assets/logos/firebox.png" alt="Firebox Halal Food"></div>
+          <h3>Firebox Halal Food</h3><span>Food &amp; Hospitality</span>
+        </div>
+        <div class="client-item">
+          <div class="client-logo"><img src="assets/logos/primeasia-university.png" alt="Primeasia University"></div>
+          <h3>Primeasia University</h3><span>Higher Education</span>
+        </div>
+
+        <!-- Exact duplicate for seamless infinite scrolling -->
+        <div class="client-item" aria-hidden="true">
+          <div class="client-logo"><img src="assets/logos/budgens-islington.png" alt=""></div>
+          <h3>Budgens Islington</h3><span>Retail &amp; Grocery</span>
+        </div>
+        <div class="client-item" aria-hidden="true">
+          <div class="client-logo"><img src="assets/logos/budgens-east-finchley.png" alt=""></div>
+          <h3>Budgens East Finchley</h3><span>Retail &amp; Grocery</span>
+        </div>
+        <div class="client-item" aria-hidden="true">
+          <div class="client-logo"><img src="assets/logos/lena-lu.png" alt=""></div>
+          <h3>Lena Lu Donut Bar</h3><span>Food &amp; Hospitality</span>
+        </div>
+        <div class="client-item" aria-hidden="true">
+          <div class="client-logo"><img src="assets/logos/habibi-camden.png" alt=""></div>
+          <h3>Habibi Camden</h3><span>Food &amp; Hospitality</span>
+        </div>
+        <div class="client-item" aria-hidden="true">
+          <div class="client-logo"><img src="assets/logos/selekt-chicken.png" alt=""></div>
+          <h3>Selekt Chicken Archway</h3><span>Food &amp; Hospitality</span>
+        </div>
+        <div class="client-item" aria-hidden="true">
+          <div class="client-logo"><img src="assets/logos/oishii-sushi.png" alt=""></div>
+          <h3>Oishii Sushi Islington</h3><span>Food &amp; Hospitality</span>
+        </div>
+        <div class="client-item" aria-hidden="true">
+          <div class="client-logo"><img src="assets/logos/juvel.png" alt=""></div>
+          <h3>Juvel</h3><span>Food &amp; Hospitality</span>
+        </div>
+        <div class="client-item" aria-hidden="true">
+          <div class="client-logo"><img src="assets/logos/house-of-dishes.png" alt=""></div>
+          <h3>House of Dishes</h3><span>Food &amp; Hospitality</span>
+        </div>
+        <div class="client-item" aria-hidden="true">
+          <div class="client-logo"><img src="assets/logos/snow-laundry.png" alt=""></div>
+          <h3>Snow Laundry</h3><span>Local Services</span>
+        </div>
+        <div class="client-item" aria-hidden="true">
+          <div class="client-logo"><img src="assets/logos/penang-city-uk.png" alt=""></div>
+          <h3>Penang City UK</h3><span>Food &amp; Hospitality</span>
+        </div>
+        <div class="client-item" aria-hidden="true">
+          <div class="client-logo"><img src="assets/logos/penang-city-finsbury-park.png" alt=""></div>
+          <h3>Penang City Finsbury Park</h3><span>Food &amp; Hospitality</span>
+        </div>
+        <div class="client-item" aria-hidden="true">
+          <div class="client-logo"><img src="assets/logos/firebox.png" alt=""></div>
+          <h3>Firebox Halal Food</h3><span>Food &amp; Hospitality</span>
+        </div>
+        <div class="client-item" aria-hidden="true">
+          <div class="client-logo"><img src="assets/logos/primeasia-university.png" alt=""></div>
+          <h3>Primeasia University</h3><span>Higher Education</span>
+        </div>
+
+      </div>
+    </div>
+    <p class="client-note reveal">Hover over the logos to pause the movement.</p>
+  </div>
 </section>
 
-<!-- 7. CAMPAIGNS -->
+<!-- CAMPAIGNS -->
 <section id="campaigns">
-<div class="container">
-<div class="heading reveal"><span class="label">Selected Campaigns</span><h2>From trends to campaign concepts</h2><p>Showing strategic thinking behind the content, not simply the final post.</p></div>
-<div class="campaign-grid">
-<div class="campaign reveal"><small>Lena Lu Donut Bar</small><h3>Disney Lilo &amp; Stitch Collaboration</h3><p>Entertainment-led creative connecting a recognisable cultural theme with product storytelling and social content.</p><div class="tags"><span class="tag">Trend Marketing</span><span class="tag">Creative Campaign</span><span class="tag">Brand Storytelling</span></div></div>
-<div class="campaign reveal"><small>Lena Lu Donut Bar</small><h3>Netflix Stranger Things S5</h3><p>Trend-based social content built around audience interest, visual storytelling and a recognisable entertainment theme.</p><div class="tags"><span class="tag">Trend-Based Content</span><span class="tag">Social Engagement</span><span class="tag">Creative Concept</span></div></div>
-</div>
-</div>
+  <div class="container">
+    <div class="eyebrow reveal">Selected Campaigns</div>
+    <h2 class="section-title reveal">From trend-led ideas to branded campaigns.</h2>
+
+    <div class="grid grid-2" style="margin-top:55px">
+
+      <article class="card project-card reveal">
+        <!-- Rename campaign image to assets/campaigns/lena-lu-lilo.jpg -->
+        <img class="project-image" src="assets/campaigns/lena-lu-lilo.jpg" alt="Lena Lu x Disney Lilo and Stitch campaign">
+        <div class="project-body">
+          <h3>Lena Lu × Disney Lilo &amp; Stitch</h3>
+          <p>Trend-led creative built around a recognisable cultural moment, adapted into branded social content.</p>
+          <div class="pill-row"><span class="pill">Campaign Concept</span><span class="pill">Social Content</span><span class="pill">Trend Marketing</span></div>
+        </div>
+      </article>
+
+      <article class="card project-card reveal">
+        <!-- Rename campaign image to assets/campaigns/lena-lu-stranger-things.jpg -->
+        <img class="project-image" src="assets/campaigns/lena-lu-stranger-things.jpg" alt="Lena Lu x Stranger Things campaign">
+        <div class="project-body">
+          <h3>Lena Lu × Netflix Stranger Things S5</h3>
+          <p>Trend-responsive social creative designed to connect a current entertainment conversation with the brand.</p>
+          <div class="pill-row"><span class="pill">Trend Research</span><span class="pill">Creative</span><span class="pill">Social</span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
 </section>
 
-<!-- 8. CONTENT -->
-<section class="section-soft" id="content">
-<div class="container">
-<div class="heading reveal"><span class="label">Content Creation Portfolio</span><h2>Visual content designed for social platforms</h2><p>Posters, reels, food content, promotional campaigns and brand visuals.</p></div>
-<div class="portfolio-grid">
-<button class="portfolio-card reveal" data-full="content-1.jpg"><img src="content-1.jpg" alt="Social media content"><span class="overlay"><h3>Social Media Posts</h3><span>Posters &amp; promotional design · View Project →</span></span></button>
-<button class="portfolio-card reveal" data-full="content-2.jpg"><img src="content-2.jpg" alt="Reels and short form content"><span class="overlay"><h3>Reels &amp; Short-form Video</h3><span>Creative video content · View Project →</span></span></button>
-<button class="portfolio-card reveal" data-full="content-3.jpg"><img src="content-3.jpg" alt="Food and hospitality content"><span class="overlay"><h3>Food &amp; Hospitality Content</h3><span>Oishii · Juvel · House of Dishes · View Project →</span></span></button>
-<button class="portfolio-card reveal" data-full="content-4.jpg"><img src="content-4.jpg" alt="Brand visual content"><span class="overlay"><h3>Brand Visual Content</h3><span>Creative direction · View Project →</span></span></button>
-</div>
-</div>
+<!-- CONTENT -->
+<section id="content">
+  <div class="container">
+    <div class="eyebrow reveal">Content Creation</div>
+    <h2 class="section-title reveal">Visual content designed for real audiences, not just a portfolio.</h2>
+    <p class="section-lead reveal">A selection of social posts, short-form video and visual brand work.</p>
+
+    <div class="grid grid-3" style="margin-top:55px">
+      <article class="card project-card reveal">
+        <img class="project-image" src="assets/content/social-media.jpg" alt="Social media content">
+        <div class="project-body"><h3>Social Media Posts</h3><p>Posters, carousels and promotional designs for UK brands.</p></div>
+      </article>
+      <article class="card project-card reveal">
+        <img class="project-image" src="assets/content/reels.jpg" alt="Short form video content">
+        <div class="project-body"><h3>Reels &amp; Short-form Video</h3><p>Concept development, visual direction and short-form storytelling.</p></div>
+      </article>
+      <article class="card project-card reveal">
+        <img class="project-image" src="assets/content/food-hospitality.jpg" alt="Food and hospitality content">
+        <div class="project-body"><h3>Food &amp; Hospitality</h3><p>Creative visual communication for food, hospitality and local businesses.</p></div>
+      </article>
+    </div>
+
+    <div class="visual-row">
+      <div class="visual-tile reveal">
+        <img src="assets/content/photography.jpg" alt="Photography work">
+        <div class="visual-overlay"><h3>Photography</h3><p>A small selection of original visual work.</p></div>
+      </div>
+      <div class="visual-tile reveal">
+        <img src="assets/content/videography.jpg" alt="Videography work">
+        <div class="visual-overlay"><h3>Videography &amp; Visual Production</h3><p>Supporting social content with practical visual production skills.</p></div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- 9. INFLUENCER -->
+<!-- INFLUENCER -->
 <section id="influencer">
-<div class="container">
-<div class="heading reveal"><span class="label">Influencer &amp; Creator Collaboration</span><h2>Campaign proof and audience reach</h2><p>Real collaboration screenshots are presented as case-study evidence.</p></div>
-<div class="influencer-grid">
-<article class="influencer fade-left"><div class="influencer-img"><img src="habibi-influencer-collaboration.jpg" alt="Habibi Camden creator collaboration screenshot"></div><div class="influencer-body"><small>Habibi Camden × Creator</small><h3>Creator Collaboration</h3><p>Creator-led brand content designed to introduce the business and products to an established social audience.</p><div class="proof">Campaign Reach / Views →</div></div></article>
-<article class="influencer fade-right"><div class="influencer-img"><img src="budgens-influencer-collaboration.jpg" alt="Budgens and FilteredBros collaboration screenshot"></div><div class="influencer-body"><small>Budgens × FilteredBros</small><h3>Influencer Collaboration</h3><p>Local retail campaign using creator content to increase visibility, engagement and audience discovery.</p><div class="proof">Campaign Reach / Views →</div></div></article>
-</div>
-</div>
+  <div class="container">
+    <div class="eyebrow reveal">Influencer &amp; Creator Collaboration</div>
+    <h2 class="section-title compact-section-title reveal">Campaign proof, not just campaign claims.</h2>
+    <p class="section-lead reveal">Real collaboration screenshots showing reach, views and audience response.</p>
+
+    <div class="grid grid-2 proof-grid">
+      <article class="card proof-card reveal">
+        <!-- Rename screenshot to assets/influencer/habibi-camden.jpg -->
+        <img class="proof-img" src="assets/influencer/habibi-camden.jpg" alt="Habibi Camden creator collaboration results">
+        <h3>Habibi Camden × Creator</h3>
+        <span class="metric">266K views shown in screenshot</span>
+        <p>Creator collaboration with visible platform performance evidence.</p>
+      </article>
+
+      <article class="card proof-card reveal">
+        <!-- Rename screenshot to assets/influencer/budgens-filteredbros.jpg -->
+        <img class="proof-img" src="assets/influencer/budgens-filteredbros.jpg" alt="Budgens FilteredBros collaboration results">
+        <h3>Budgens × FilteredBros</h3>
+        <span class="metric">7.9M views shown in screenshot</span>
+        <p>Creator-led social content with strong visible reach and engagement metrics.</p>
+      </article>
+    </div>
+  </div>
 </section>
 
-<!-- 10. CONTENT STRATEGY -->
-<section class="section-soft">
-<div class="container">
-<div class="heading reveal"><span class="label">Content Strategy / What I Do</span><h2>From strategy to optimisation</h2></div>
-<div class="six">
-<div class="service reveal"><span class="num">01 — Strategy</span><h3>Strategy</h3><p>Define the communication direction, audience and purpose behind each campaign.</p></div>
-<div class="service reveal"><span class="num">02 — Content Planning</span><h3>Content Planning</h3><p>Build practical content calendars around products, seasons, trends and business goals.</p></div>
-<div class="service reveal"><span class="num">03 — Creative Production</span><h3>Creative Production</h3><p>Develop social visuals, promotional concepts, reels and campaign assets.</p></div>
-<div class="service reveal"><span class="num">04 — Social Media Management</span><h3>Social Media Management</h3><p>Support consistent publishing, communication and audience-facing content.</p></div>
-<div class="service reveal"><span class="num">05 — Influencer Collaboration</span><h3>Influencer Collaboration</h3><p>Coordinate creator-led content and present campaign performance clearly.</p></div>
-<div class="service reveal"><span class="num">06 — Campaign Optimisation</span><h3>Campaign Optimisation</h3><p>Review content performance and improve creative direction for future campaigns.</p></div>
-</div>
-</div>
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="eyebrow reveal">What I Do</div>
+    <h2 class="section-title reveal">Digital skills across the full content cycle.</h2>
+
+    <div class="grid grid-3" style="margin-top:55px">
+      <div class="card service-card reveal"><span class="number">01</span><h3>Strategy</h3><p>Turning objectives into practical content and campaign directions.</p></div>
+      <div class="card service-card reveal"><span class="number">02</span><h3>Content Planning</h3><p>Planning social content around audiences, seasons, products and trends.</p></div>
+      <div class="card service-card reveal"><span class="number">03</span><h3>Creative Production</h3><p>Designing social visuals, reels and branded content.</p></div>
+      <div class="card service-card reveal"><span class="number">04</span><h3>Social Media Management</h3><p>Content scheduling, platform management and audience communication.</p></div>
+      <div class="card service-card reveal"><span class="number">05</span><h3>Influencer Collaboration</h3><p>Supporting creator partnerships and campaign content.</p></div>
+      <div class="card service-card reveal"><span class="number">06</span><h3>Campaign Optimisation</h3><p>Reviewing performance and improving creative direction.</p></div>
+    </div>
+  </div>
 </section>
 
-<!-- 11. EDUCATION -->
+<!-- EDUCATION -->
 <section id="education">
-<div class="container">
-<div class="heading reveal"><span class="label">Academic Background</span><h2>Global Public Health and Nutrition</h2><p>My academic identity remains an important part of how I approach research, communication and professional work.</p></div>
-<div class="edu-grid">
-<div class="edu fade-left"><span class="label">Postgraduate</span><h3>MSc Global Public Health</h3><strong>Canterbury Christ Church University, UK</strong><p>Advanced study in global health, research, evidence-based practice and population health.</p></div>
-<div class="edu fade-right"><span class="label">Undergraduate</span><h3>Bachelor / Public Health Nutrition</h3><strong>Primeasia University</strong><p>Academic foundation in public health, nutrition, health promotion and community-focused practice.</p></div>
-</div>
-<div class="convocation reveal"><img src="convocation.jpg" alt="Rosul Ahmed Rasel convocation photograph"></div>
-</div>
+  <div class="container">
+    <div class="eyebrow reveal">Education</div>
+    <h2 class="section-title reveal">Academic background supporting professional communication.</h2>
+
+    <div class="edu-feature">
+      <!-- Rename to assets/education/convocation.jpg -->
+      <img class="edu-photo reveal" src="assets/education/convocation.jpg" alt="Rosul Ahmed Rasel graduation photograph">
+      <div class="card edu-card reveal">
+        <div class="eyebrow">MSc</div>
+        <h3>Global Public Health</h3>
+        <p>Canterbury Christ Church University, UK</p>
+        <p style="margin-top:22px">Research, evidence-based communication, analytical thinking and public-facing communication form an important part of my academic foundation.</p>
+        <div style="margin-top:28px">
+          <strong>Public Health Nutrition Background</strong>
+          <p>Primeasia University</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- 12. LEADERSHIP -->
-<section class="section-soft" id="achievements">
-<div class="container">
-<div class="heading reveal"><span class="label">Leadership &amp; Achievements</span><h2>Leadership beyond the screen</h2><p>Communication, leadership and community involvement supporting my professional identity.</p></div>
-<div class="achievement-grid">
-<article class="achievement reveal"><img src="emerging-leader-award.jpg" alt="Emerging Leader Award 2024"><div class="achievement-body"><small>Leadership Recognition</small><h3>Emerging Leader Award 2024</h3><p>Recognition for leadership, contribution and positive community impact.</p></div></article>
-<article class="achievement reveal"><img src="leadership-profile.jpg" alt="Primeasia University Nutrition Club leadership"><div class="achievement-body"><small>Student Leadership</small><h3>Nutrition Club Leadership</h3><p>Leadership experience through Primeasia University student and nutrition activities.</p></div></article>
-<article class="achievement reveal"><img src="volunteer-leader-award.png" alt="Volunteer leadership event"><div class="achievement-body"><small>Volunteer Leadership</small><h3>Volunteer Recognition</h3><p>Recognition for volunteer contribution, teamwork and community engagement.</p></div></article>
-<article class="achievement reveal"><img src="phn-speech.png.jpeg" alt="Public speaking event"><div class="achievement-body"><small>Public Speaking</small><h3>Public Speaking &amp; Communication</h3><p>Speaking and event participation supporting professional communication and confidence.</p></div></article>
-</div>
-</div>
+<!-- LEADERSHIP -->
+<section id="leadership">
+  <div class="container">
+    <div class="eyebrow reveal">Leadership &amp; Achievements</div>
+    <h2 class="section-title reveal">Leadership beyond the screen.</h2>
+    <p class="section-lead reveal">A compact selection showing communication, leadership, volunteering and public-speaking experience beyond digital work.</p>
+
+    <div class="grid grid-4 leadership">
+      <!-- Rename files as shown -->
+      <article class="card lead-card reveal">
+        <img src="assets/leadership/emerging-leader-award.jpg" alt="Emerging Leader Award 2024">
+        <h3>Emerging Leader Award 2024</h3>
+        <p>Recognition for leadership and contribution.</p>
+      </article>
+      <article class="card lead-card reveal">
+        <img src="assets/leadership/student-leadership.jpg" alt="Student leadership">
+        <h3>Student Leadership</h3>
+        <p>Leadership and organisational involvement at Primeasia University.</p>
+      </article>
+      <article class="card lead-card reveal">
+        <img src="assets/leadership/volunteer-event.jpg" alt="Volunteer appreciation event">
+        <h3>Volunteer Leadership</h3>
+        <p>Volunteer and community-facing experience.</p>
+      </article>
+      <article class="card lead-card reveal">
+        <img src="assets/leadership/public-speaking.jpg" alt="Public speaking">
+        <h3>Public Speaking</h3>
+        <p>Presentations, events and communication in front of audiences.</p>
+      </article>
+    </div>
+  </div>
 </section>
 
-<!-- 13. RESEARCH -->
-<section id="research">
-<div class="container">
-<div class="heading reveal"><span class="label">Research &amp; Professional Development</span><h2>Evidence-based thinking</h2></div>
-<div class="research reveal">
-<small>Public Health Research</small>
-<h3>Research, analytical thinking and evidence-based communication</h3>
-<p>My Global Public Health background includes research, academic writing, literature review, data analysis and evidence-based communication. These skills complement my digital marketing work by helping me understand audiences, interpret information and communicate clearly.</p>
-<div class="tags"><span class="tag">Public Health Research</span><span class="tag">Research &amp; Analytics</span><span class="tag">Academic Writing</span><span class="tag">Evidence-Based Communication</span><span class="tag">Publication Experience</span></div>
-</div>
-</div>
+<!-- ENDORSEMENTS -->
+<section id="endorsements">
+  <div class="container">
+    <div class="eyebrow reveal">Endorsements</div>
+    <h2 class="section-title reveal">What people say about working with me.</h2>
+    <p class="section-lead reveal">This section starts with your own verified recommendations and can grow over time.</p>
+
+    <div class="grid grid-2 endorsement-wrap">
+      <!-- Replace these placeholders with real endorsements when you receive them -->
+      <article class="card quote-card reveal">
+        <div class="quote">“Your endorsement could appear here.”</div>
+        <div class="quote-author">Name · Role / Organisation</div>
+      </article>
+      <article class="card quote-card reveal">
+        <div class="quote">“Your endorsement could appear here.”</div>
+        <div class="quote-author">Name · Role / Organisation</div>
+      </article>
+    </div>
+
+    <div class="endorse-cta reveal">
+      <h3>Worked with me?</h3>
+      <p style="color:var(--muted);margin:8px auto 18px;max-width:650px">
+        I'd appreciate a short professional recommendation about your experience working with me.
+      </p>
+      <!-- Replace YOUR-GOOGLE-FORM-URL with your actual Google Form link -->
+      <a class="btn primary" href="YOUR-GOOGLE-FORM-URL" target="_blank">Leave an Endorsement</a>
+    </div>
+  </div>
 </section>
 
-<!-- 14. ENDORSEMENTS -->
-<section class="section-soft" id="endorsements">
-<div class="container">
-<div class="heading reveal"><span class="label">Endorsements</span><h2>What people say about working with me</h2><p>Professional recommendations can be added here as they are received.</p></div>
-<div class="endorsements">
-<div class="quote reveal"><p>“Your endorsement could appear here.”</p><strong>Client / Colleague</strong></div>
-<div class="quote reveal"><p>“Your endorsement could appear here.”</p><strong>Client / Colleague</strong></div>
-<div class="quote reveal"><p>“Your endorsement could appear here.”</p><strong>Client / Colleague</strong></div>
-</div>
-<div class="endorse-cta"><a class="btn primary" href="https://forms.google.com/" target="_blank">Leave an Endorsement</a></div>
-</div>
-</section>
-
-<!-- 15. CONTACT -->
+<!-- CONTACT -->
 <section id="contact">
-<div class="container">
-<div class="contact reveal">
-<span class="label">Contact</span>
-<h2>Let's Work Together</h2>
-<p>I'm open to opportunities in Digital Marketing, Content Creation, Social Media, Hospitality and related professional opportunities in London and across the UK.</p>
-<div class="actions">
-<a class="btn primary" href="mailto:askme.rasel@gmail.com">Email Me</a>
-<a class="btn" href="https://www.linkedin.com/in/ahmed-rasel-on/" target="_blank">LinkedIn</a>
-<a class="btn" href="Rosul_Ahmed_Rasel_CV.pdf" download>Download CV</a>
-</div>
-<p><strong>askme.rasel@gmail.com</strong></p>
-</div>
-</div>
+  <div class="container">
+    <div class="contact-box reveal">
+      <div class="eyebrow">Contact</div>
+      <h2 class="section-title">Let's Work Together</h2>
+      <p class="section-lead">I'm open to opportunities in Digital Marketing, Content Creation, Social Media and related professional roles in London and across the UK.</p>
+      <div class="email">askme.rasel@gmail.com</div>
+      <div class="btns">
+        <a class="btn primary" href="mailto:askme.rasel@gmail.com">Email Me</a>
+        <a class="btn" href="YOUR-LINKEDIN-URL" target="_blank">LinkedIn</a>
+        <a class="btn" href="assets/Rosul-Ahmed-Rasel-CV.pdf" target="_blank">Download CV</a>
+      </div>
+    </div>
+  </div>
 </section>
 
 </main>
 
-<!-- 16. FOOTER -->
-<footer><div class="container"><strong>Rosul Ahmed Rasel</strong><br>Digital Marketing Specialist | Content Creator | Hospitality &amp; Customer Experience | Global Public Health Graduate<br>© 2026 Rosul Ahmed Rasel</div></footer>
-
-<!-- LIGHTBOX -->
-<div id="lightbox" style="display:none;position:fixed;inset:0;z-index:3000;background:rgba(4,9,18,.92);align-items:center;justify-content:center;padding:25px">
-<button id="closeLightbox" style="position:absolute;right:25px;top:20px;width:45px;height:45px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.1);color:#fff;font-size:25px;cursor:pointer">×</button>
-<img id="lightboxImg" src="" alt="Portfolio preview" style="max-width:94vw;max-height:88vh;border-radius:18px">
-</div>
+<footer class="footer">
+  <div class="container footer-inner">
+    <div><strong>Rosul Ahmed Rasel</strong><br>Digital Marketing Specialist | Content Creator | MSc Global Public Health</div>
+    <div>© 2026 Rosul Ahmed Rasel</div>
+  </div>
+</footer>
 
 <script>
-const nav=document.getElementById('navlinks');
-document.getElementById('menu').addEventListener('click',()=>nav.classList.toggle('open'));
-nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+const menuBtn = document.querySelector('.menu-btn');
+const navLinks = document.querySelector('.nav-links');
 
-const theme=document.getElementById('theme');
-if(localStorage.getItem('rasel-theme')==='dark')document.body.classList.add('dark');
-theme.addEventListener('click',()=>{
- document.body.classList.toggle('dark');
- localStorage.setItem('rasel-theme',document.body.classList.contains('dark')?'dark':'light');
+menuBtn.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
 });
 
-const observer=new IntersectionObserver(entries=>{
- entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');observer.unobserve(e.target)}});
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => navLinks.classList.remove('open'));
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+      observer.unobserve(entry.target);
+    }
+  });
 },{threshold:.12});
-document.querySelectorAll('.reveal,.fade-left,.fade-right').forEach(el=>observer.observe(el));
 
-const lb=document.getElementById('lightbox'),lbImg=document.getElementById('lightboxImg');
-document.querySelectorAll('[data-full]').forEach(item=>{
- item.addEventListener('click',()=>{
-   lbImg.src=item.dataset.full;lb.style.display='flex';document.body.style.overflow='hidden';
- });
-});
-function closeLB(){lb.style.display='none';lbImg.src='';document.body.style.overflow=''}
-document.getElementById('closeLightbox').addEventListener('click',closeLB);
-lb.addEventListener('click',e=>{if(e.target===lb)closeLB()});
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLB()});
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+
+<script>
+  document.querySelectorAll("img").forEach(function(img){
+    img.addEventListener("error", function(){
+      this.classList.add("image-missing");
+      this.removeAttribute("src");
+      this.setAttribute("aria-label", this.alt || "Image placeholder");
+    }, {once:true});
+  });
+
+  const observer = new MutationObserver(function(){
+    document.querySelectorAll("img:not([data-bound])").forEach(function(img){
+      img.dataset.bound = "1";
+      img.addEventListener("error", function(){
+        this.classList.add("image-missing");
+        this.removeAttribute("src");
+      }, {once:true});
+    });
+  });
+  observer.observe(document.body, {childList:true, subtree:true});
 </script>
 </body>
 </html>
