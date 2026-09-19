@@ -201,8 +201,9 @@ section{
 .client-logo{
   width:128px;
   height:128px;
+  aspect-ratio:1/1;
   margin:0 auto 14px;
-  border-radius:50%;
+  border-radius:18px;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -383,6 +384,29 @@ section{
   .proof-img{height:360px}
   .contact-box{padding:35px 24px}
 }
+
+.visual-text-only{
+  min-height:270px;
+  background:linear-gradient(145deg,rgba(21,37,66,.96),rgba(14,26,46,.96));
+}
+.visual-text-only .static-overlay{
+  position:static;
+  height:100%;
+  min-height:270px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:35px 28px;
+  background:none;
+}
+.lead-image-placeholder{
+  width:100%;
+  height:220px;
+  border-radius:16px;
+  margin-bottom:17px;
+  background:linear-gradient(145deg,#152542,#0f1a2d);
+  border:1px dashed rgba(127,156,255,.25);
+}
 </style>
 </head>
 
@@ -426,8 +450,7 @@ section{
       </p>
       <div class="btns">
         <a class="btn primary" href="#content">View My Work</a>
-        <a class="btn" href="assets/Rosul-Ahmed-Rasel-CV.pdf" target="_blank">Download CV</a>
-        <a class="btn" href="YOUR-LINKEDIN-URL" target="_blank">LinkedIn</a>
+        <a class="btn" href="#contact" target="_blank">LinkedIn</a>
       </div>
     </div>
 
@@ -527,19 +550,19 @@ section{
 
         <!-- First set -->
         <div class="client-item">
-          <div class="client-logo"><img src="assets/logos/budgens-islington.png" alt="Budgens Islington"></div>
+          <div class="client-logo"><img src="assets/logos/budgens-islington.jpg" alt="Budgens Islington"></div>
           <h3>Budgens Islington</h3><span>Retail &amp; Grocery</span>
         </div>
         <div class="client-item">
-          <div class="client-logo"><img src="assets/logos/budgens-east-finchley.png" alt="Budgens East Finchley"></div>
+          <div class="client-logo"><img src="assets/logos/budgens-east-finchley.jpg" alt="Budgens East Finchley"></div>
           <h3>Budgens East Finchley</h3><span>Retail &amp; Grocery</span>
         </div>
         <div class="client-item">
-          <div class="client-logo"><img src="assets/logos/lena-lu.png" alt="Lena Lu Donut Bar"></div>
+          <div class="client-logo"><img src="assets/logos/lena-lu.jpg" alt="Lena Lu Donut Bar"></div>
           <h3>Lena Lu Donut Bar</h3><span>Food &amp; Hospitality</span>
         </div>
         <div class="client-item">
-          <div class="client-logo"><img src="assets/logos/habibi-camden.png" alt="Habibi Camden"></div>
+          <div class="client-logo"><img src="assets/logos/habibi-camden-logo.jpg" alt="Habibi Camden"></div>
           <h3>Habibi Camden</h3><span>Food &amp; Hospitality</span>
         </div>
         <div class="client-item">
@@ -547,7 +570,7 @@ section{
           <h3>Selekt Chicken Archway</h3><span>Food &amp; Hospitality</span>
         </div>
         <div class="client-item">
-          <div class="client-logo"><img src="assets/logos/oishii-sushi.png" alt="Oishii Sushi Islington"></div>
+          <div class="client-logo"><img src="assets/logos/oishii-sushi.jpg" alt="Oishii Sushi Islington"></div>
           <h3>Oishii Sushi Islington</h3><span>Food &amp; Hospitality</span>
         </div>
         <div class="client-item">
@@ -555,45 +578,41 @@ section{
           <h3>Juvel</h3><span>Food &amp; Hospitality</span>
         </div>
         <div class="client-item">
-          <div class="client-logo"><img src="assets/logos/house-of-dishes.png" alt="House of Dishes"></div>
+          <div class="client-logo"><img src="assets/logos/house-of-dishes.jpg" alt="House of Dishes"></div>
           <h3>House of Dishes</h3><span>Food &amp; Hospitality</span>
         </div>
         <div class="client-item">
-          <div class="client-logo"><img src="assets/logos/snow-laundry.png" alt="Snow Laundry"></div>
-          <h3>Snow Laundry</h3><span>Local Services</span>
-        </div>
-        <div class="client-item">
-          <div class="client-logo"><img src="assets/logos/penang-city-uk.png" alt="Penang City UK"></div>
+          <div class="client-logo"><img src="assets/logos/penang-city-uk.jpg" alt="Penang City UK"></div>
           <h3>Penang City UK</h3><span>Food &amp; Hospitality</span>
         </div>
         <div class="client-item">
-          <div class="client-logo"><img src="assets/logos/penang-city-finsbury-park.png" alt="Penang City Finsbury Park"></div>
+          <div class="client-logo"><img src="assets/logos/penang-city-finsbury-park.jpg" alt="Penang City Finsbury Park"></div>
           <h3>Penang City Finsbury Park</h3><span>Food &amp; Hospitality</span>
         </div>
         <div class="client-item">
-          <div class="client-logo"><img src="assets/logos/firebox.png" alt="Firebox Halal Food"></div>
+          <div class="client-logo"><img src="assets/logos/firebox.jpg" alt="Firebox Halal Food"></div>
           <h3>Firebox Halal Food</h3><span>Food &amp; Hospitality</span>
         </div>
         <div class="client-item">
-          <div class="client-logo"><img src="assets/logos/primeasia-university.png" alt="Primeasia University"></div>
+          <div class="client-logo"><img src="assets/logos/primeasia-university.jpg" alt="Primeasia University"></div>
           <h3>Primeasia University</h3><span>Higher Education</span>
         </div>
 
         <!-- Exact duplicate for seamless infinite scrolling -->
         <div class="client-item" aria-hidden="true">
-          <div class="client-logo"><img src="assets/logos/budgens-islington.png" alt=""></div>
+          <div class="client-logo"><img src="assets/logos/budgens-islington.jpg" alt=""></div>
           <h3>Budgens Islington</h3><span>Retail &amp; Grocery</span>
         </div>
         <div class="client-item" aria-hidden="true">
-          <div class="client-logo"><img src="assets/logos/budgens-east-finchley.png" alt=""></div>
+          <div class="client-logo"><img src="assets/logos/budgens-east-finchley.jpg" alt=""></div>
           <h3>Budgens East Finchley</h3><span>Retail &amp; Grocery</span>
         </div>
         <div class="client-item" aria-hidden="true">
-          <div class="client-logo"><img src="assets/logos/lena-lu.png" alt=""></div>
+          <div class="client-logo"><img src="assets/logos/lena-lu.jpg" alt=""></div>
           <h3>Lena Lu Donut Bar</h3><span>Food &amp; Hospitality</span>
         </div>
         <div class="client-item" aria-hidden="true">
-          <div class="client-logo"><img src="assets/logos/habibi-camden.png" alt=""></div>
+          <div class="client-logo"><img src="assets/logos/habibi-camden-logo.jpg" alt=""></div>
           <h3>Habibi Camden</h3><span>Food &amp; Hospitality</span>
         </div>
         <div class="client-item" aria-hidden="true">
@@ -601,7 +620,7 @@ section{
           <h3>Selekt Chicken Archway</h3><span>Food &amp; Hospitality</span>
         </div>
         <div class="client-item" aria-hidden="true">
-          <div class="client-logo"><img src="assets/logos/oishii-sushi.png" alt=""></div>
+          <div class="client-logo"><img src="assets/logos/oishii-sushi.jpg" alt=""></div>
           <h3>Oishii Sushi Islington</h3><span>Food &amp; Hospitality</span>
         </div>
         <div class="client-item" aria-hidden="true">
@@ -609,27 +628,23 @@ section{
           <h3>Juvel</h3><span>Food &amp; Hospitality</span>
         </div>
         <div class="client-item" aria-hidden="true">
-          <div class="client-logo"><img src="assets/logos/house-of-dishes.png" alt=""></div>
+          <div class="client-logo"><img src="assets/logos/house-of-dishes.jpg" alt=""></div>
           <h3>House of Dishes</h3><span>Food &amp; Hospitality</span>
         </div>
         <div class="client-item" aria-hidden="true">
-          <div class="client-logo"><img src="assets/logos/snow-laundry.png" alt=""></div>
-          <h3>Snow Laundry</h3><span>Local Services</span>
-        </div>
-        <div class="client-item" aria-hidden="true">
-          <div class="client-logo"><img src="assets/logos/penang-city-uk.png" alt=""></div>
+          <div class="client-logo"><img src="assets/logos/penang-city-uk.jpg" alt=""></div>
           <h3>Penang City UK</h3><span>Food &amp; Hospitality</span>
         </div>
         <div class="client-item" aria-hidden="true">
-          <div class="client-logo"><img src="assets/logos/penang-city-finsbury-park.png" alt=""></div>
+          <div class="client-logo"><img src="assets/logos/penang-city-finsbury-park.jpg" alt=""></div>
           <h3>Penang City Finsbury Park</h3><span>Food &amp; Hospitality</span>
         </div>
         <div class="client-item" aria-hidden="true">
-          <div class="client-logo"><img src="assets/logos/firebox.png" alt=""></div>
+          <div class="client-logo"><img src="assets/logos/firebox.jpg" alt=""></div>
           <h3>Firebox Halal Food</h3><span>Food &amp; Hospitality</span>
         </div>
         <div class="client-item" aria-hidden="true">
-          <div class="client-logo"><img src="assets/logos/primeasia-university.png" alt=""></div>
+          <div class="client-logo"><img src="assets/logos/primeasia-university.jpg" alt=""></div>
           <h3>Primeasia University</h3><span>Higher Education</span>
         </div>
 
@@ -648,8 +663,8 @@ section{
     <div class="grid grid-2" style="margin-top:55px">
 
       <article class="card project-card reveal">
-        <!-- Rename campaign image to assets/campaigns/lena-lu-lilo.jpg -->
-        <img class="project-image" src="assets/campaigns/lena-lu-lilo.jpg" alt="Lena Lu x Disney Lilo and Stitch campaign">
+        <!-- Rename campaign image to assets/campaigns/lena-lu-lilo.png -->
+        <img class="project-image" src="assets/campaigns/lena-lu-lilo.png" alt="Lena Lu x Disney Lilo and Stitch campaign">
         <div class="project-body">
           <h3>Lena Lu × Disney Lilo &amp; Stitch</h3>
           <p>Trend-led creative built around a recognisable cultural moment, adapted into branded social content.</p>
@@ -658,8 +673,8 @@ section{
       </article>
 
       <article class="card project-card reveal">
-        <!-- Rename campaign image to assets/campaigns/lena-lu-stranger-things.jpg -->
-        <img class="project-image" src="assets/campaigns/lena-lu-stranger-things.jpg" alt="Lena Lu x Stranger Things campaign">
+        <!-- Rename campaign image to assets/campaigns/lena-lu-stranger-things.png -->
+        <img class="project-image" src="assets/campaigns/lena-lu-stranger-things.png" alt="Lena Lu x Stranger Things campaign">
         <div class="project-body">
           <h3>Lena Lu × Netflix Stranger Things S5</h3>
           <p>Trend-responsive social creative designed to connect a current entertainment conversation with the brand.</p>
@@ -684,7 +699,7 @@ section{
         <div class="project-body"><h3>Social Media Posts</h3><p>Posters, carousels and promotional designs for UK brands.</p></div>
       </article>
       <article class="card project-card reveal">
-        <img class="project-image" src="assets/content/reels.jpg" alt="Short form video content">
+        <img class="project-image" src="assets/content/social-media.jpg" alt="Short form video content">
         <div class="project-body"><h3>Reels &amp; Short-form Video</h3><p>Concept development, visual direction and short-form storytelling.</p></div>
       </article>
       <article class="card project-card reveal">
@@ -694,13 +709,17 @@ section{
     </div>
 
     <div class="visual-row">
-      <div class="visual-tile reveal">
-        <img src="assets/content/photography.jpg" alt="Photography work">
-        <div class="visual-overlay"><h3>Photography</h3><p>A small selection of original visual work.</p></div>
+      <div class="visual-tile visual-text-only reveal">
+        <div class="visual-overlay static-overlay">
+          <h3>Photography</h3>
+          <p>A small selection of original visual work.</p>
+        </div>
       </div>
-      <div class="visual-tile reveal">
-        <img src="assets/content/videography.jpg" alt="Videography work">
-        <div class="visual-overlay"><h3>Videography &amp; Visual Production</h3><p>Supporting social content with practical visual production skills.</p></div>
+      <div class="visual-tile visual-text-only reveal">
+        <div class="visual-overlay static-overlay">
+          <h3>Videography &amp; Visual Production</h3>
+          <p>Supporting social content with practical visual production skills.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -788,17 +807,17 @@ section{
         <p>Recognition for leadership and contribution.</p>
       </article>
       <article class="card lead-card reveal">
-        <img src="assets/leadership/student-leadership.jpg" alt="Student leadership">
+        <div class="lead-image-placeholder" aria-label="Student leadership image to be replaced"></div>
         <h3>Student Leadership</h3>
         <p>Leadership and organisational involvement at Primeasia University.</p>
       </article>
       <article class="card lead-card reveal">
-        <img src="assets/leadership/volunteer-event.jpg" alt="Volunteer appreciation event">
+        <div class="lead-image-placeholder" aria-label="Volunteer leadership image to be replaced"></div>
         <h3>Volunteer Leadership</h3>
         <p>Volunteer and community-facing experience.</p>
       </article>
       <article class="card lead-card reveal">
-        <img src="assets/leadership/public-speaking.jpg" alt="Public speaking">
+        <div class="lead-image-placeholder" aria-label="Public speaking image to be replaced"></div>
         <h3>Public Speaking</h3>
         <p>Presentations, events and communication in front of audiences.</p>
       </article>
@@ -831,7 +850,7 @@ section{
         I'd appreciate a short professional recommendation about your experience working with me.
       </p>
       <!-- Replace YOUR-GOOGLE-FORM-URL with your actual Google Form link -->
-      <a class="btn primary" href="YOUR-GOOGLE-FORM-URL" target="_blank">Leave an Endorsement</a>
+      <a class="btn primary" href="#contact" target="_blank">Leave an Endorsement</a>
     </div>
   </div>
 </section>
@@ -846,8 +865,7 @@ section{
       <div class="email">askme.rasel@gmail.com</div>
       <div class="btns">
         <a class="btn primary" href="mailto:askme.rasel@gmail.com">Email Me</a>
-        <a class="btn" href="YOUR-LINKEDIN-URL" target="_blank">LinkedIn</a>
-        <a class="btn" href="assets/Rosul-Ahmed-Rasel-CV.pdf" target="_blank">Download CV</a>
+        <a class="btn" href="#contact" target="_blank">LinkedIn</a>
       </div>
     </div>
   </div>
@@ -888,24 +906,12 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 
 <script>
+  // Keep the page clean if an optional future image is missing.
   document.querySelectorAll("img").forEach(function(img){
     img.addEventListener("error", function(){
-      this.classList.add("image-missing");
-      this.removeAttribute("src");
-      this.setAttribute("aria-label", this.alt || "Image placeholder");
+      this.style.display = "none";
     }, {once:true});
   });
-
-  const observer = new MutationObserver(function(){
-    document.querySelectorAll("img:not([data-bound])").forEach(function(img){
-      img.dataset.bound = "1";
-      img.addEventListener("error", function(){
-        this.classList.add("image-missing");
-        this.removeAttribute("src");
-      }, {once:true});
-    });
-  });
-  observer.observe(document.body, {childList:true, subtree:true});
 </script>
 </body>
 </html>
